@@ -77,6 +77,12 @@ work:
     company_logo: ''
     date_start: 2024-02-01
     date_end: ''
+  - position: Machine Learning Co-convener
+    company_name: ATLAS Collaboration
+    company_url: https://atlas.cern/
+    company_logo: ''
+    date_start: 2023-04-01
+    date_end: ''
   - position: Postdoctoral Researcher
     company_name: Lawrence Berkeley National Laboratory
     company_url: https://lbl.gov/
@@ -88,46 +94,41 @@ work:
     #   - Migrated infrastructure to a new data center
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Machine Learning Co-convener
-    company_name: ATLAS Collaboration
-    company_url: https://atlas.cern/
-    company_logo: ''
-    date_start: 2023-04-01
-    date_end: ''
+  
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
+# skills:
+#   - name: Technical Skills
+#     items:
+#       - name: Python
+#         description: ''
+#         percent: 80
+#         icon: code-bracket
+#       - name: Data Science
+#         description: ''
+#         percent: 100
+#         icon: chart-bar
+#       - name: SQL
+#         description: ''
+#         percent: 40
+#         icon: circle-stack
+#   - name: Hobbies
+#     color: '#eeac02'
+#     color_border: '#f0bf23'
+#     items:
+#       - name: Hiking
+#         description: ''
+#         percent: 60
+#         icon: person-simple-walk
+#       - name: Cats
+#         description: ''
+#         percent: 100
+#         icon: cat
+#       - name: Photography
+#         description: ''
+#         percent: 80
+#         icon: camera
 
 languages:
   - name: English
@@ -167,5 +168,5 @@ languages:
 #       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-I am currently Director of Cloud Infrastructure at GenCoin where I am leading teams on edge computing, deep sea data center architecture, and hivemind optimization.
+I am currently a postdoctoral fellow at the [Niels Bohr Institute, University of Copenhagen](https://nbi.ku.dk/). I am funded by the [Danish Data Science Academy](https://ddsa.dk/), pursuing a research programme focused on "[Physics Language Models](https://ddsa.dk/danielmurnane/)" - a new paradigm for understanding and generating high energy physics behaviour with geometric machine learning.
 {style="text-align: justify; font-size: 0.8em;"}

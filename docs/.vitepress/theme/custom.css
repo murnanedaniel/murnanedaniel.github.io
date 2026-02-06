@@ -1,0 +1,27 @@
+/* Logo size customization */
+:root {
+  --vp-nav-height: 64px;
+  --vp-nav-logo-height: 48px;
+}
+
+.VPNav {
+  height: var(--vp-nav-height) !important;
+}
+
+.VPNavBar .VPNavBarTitle .logo {
+  height: 48px !important;
+  width: auto !important;
+}
+
+/* Alternative direct approach */
+.VPNavBar .logo {
+  height: 48px !important;
+  width: auto !important;
+}
+
+/* Try targeting the image directly */
+.VPNavBar img.logo {
+  height: 48px !important;
+  width: auto !important;
+  max-height: none !important;
+} 

@@ -1,97 +1,79 @@
 # Changelog
 
+<!-- DANIEL: This is your CV / career timeline, reframed as a software changelog.
+     Each career milestone is a "version release."
+     Use semantic versioning: major = new role/institution, minor = significant output, patch = smaller stuff.
+     Most recent at top. This is one of the funniest pages — lean into it. -->
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.1.0] - 2024-04-23
+## [Unreleased]
 
-### Added
-- New resource pooling system for improved performance
-- Advanced event filtering capabilities
-- Custom middleware support
-- TypeScript 5.0 support
+### In Development
+- <!-- What are you working toward next? -->
 
-### Changed
-- Improved error handling with detailed stack traces
-- Enhanced documentation with more examples
-- Updated dependencies to latest stable versions
-- Optimized batch processing performance
-
-### Deprecated
-- Old task scheduling API (will be removed in 3.0.0)
-- Legacy event system (use new event filters instead)
-
-### Fixed
-- Memory leak in long-running tasks
-- Race condition in concurrent task processing
-- Incorrect error codes in rate limiting
-- Documentation typos and broken links
-
-## [2.0.0] - 2024-01-15
+## [3.0.0] - 2023-present — Copenhagen
 
 ### Breaking Changes
-- Completely redesigned API for better usability
-- New configuration format
-- Changed default behaviors for better security
+- Relocated runtime environment to **Niels Bohr Institute, University of Copenhagen**
+- New role: DDSA Postdoctoral Fellow
+- Breaking: Now operates in CET timezone (previously GMT/AEST)
 
 ### Added
-- Comprehensive TypeScript support
-- New middleware system
-- Advanced monitoring capabilities
-- Automatic rate limiting
-- Circuit breaker pattern implementation
+- ML Co-convener role for ATLAS experiment
+- <!-- Key papers published during this period -->
+- <!-- Projects started -->
 
-### Changed
-- Improved error handling
-- Better performance in high-load scenarios
-- More consistent API naming
-- Enhanced documentation
+### Improved
+- <!-- Skills developed, new expertise -->
 
-### Removed
-- Legacy callback-based API
-- Deprecated configuration options
-- Outdated examples
+---
 
-### Fixed
-- Various memory leaks
-- Inconsistent error handling
-- Race conditions in concurrent operations
+## [2.0.0] - <!-- year range --> — <!-- Institution / Role -->
 
-## [1.2.0] - 2023-11-30
+<!-- DANIEL: Your PhD or previous postdoc — fill in -->
+
+### Breaking Changes
+- Major architecture overhaul: PhD conferred <!-- or whatever milestone -->
+- New specialization modules: <!-- what you focused on -->
 
 ### Added
-- Basic TypeScript definitions
-- Simple monitoring system
-- Initial rate limiting
-
-### Changed
-- Updated documentation
-- Improved error messages
-- Better performance
+- Thesis: "<!-- thesis title -->"
+- <!-- Key papers -->
+- <!-- Awards, fellowships -->
 
 ### Fixed
-- Memory usage issues
-- Incorrect error handling
-- Documentation errors
+- <!-- Funny self-deprecating bug fixes -->
 
-## [1.1.0] - 2023-09-15
+---
 
-### Added
-- Basic event system
-- Simple task scheduling
-- Initial documentation
-
-### Fixed
-- Configuration loading issues
-- Performance bottlenecks
-- Documentation typos
-
-## [1.0.0] - 2023-07-01
+## [1.0.0] - <!-- year range --> — <!-- Undergrad Institution -->
 
 ### Added
 - Initial release
-- Basic task management
-- Simple configuration system
-- Core documentation 
+- Core physics module compiled (B.Sc. in <!-- field -->)
+- <!-- First research experience -->
+- <!-- Anything notable from early career -->
+
+---
+
+## [0.x.0] - Pre-release
+
+### Added
+- Born in <!-- country -->
+- Early interest in <!-- what got you into physics/science -->
+- <!-- Any fun origin story details -->
+
+<!-- DANIEL: Fill in all the brackets above with your actual career details.
+     Add or remove version sections as needed. Each version should have:
+     - A year range and location
+     - Breaking Changes (major life/career shifts)
+     - Added (new capabilities, papers, roles)
+     - Fixed (funny self-deprecating items optional)
+     - Deprecated (things you stopped doing)
+
+     Consult your actual CV and publication list. The publications data is at:
+     docs/data/publications.json -->

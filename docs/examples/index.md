@@ -1,214 +1,90 @@
 # Examples
 
-This section provides examples of common use cases and patterns when working with the library.
+This section provides worked examples demonstrating the library's capabilities in real-world deployments &mdash; conference talks, tutorials, and teaching.
 
-## Basic Examples
+For an exhaustive list of publications, see [Publications](/publications). The examples below are the ones with associated talks, slides, or external materials.
 
-### Simple Task Creation
+## Featured Examples
 
-```typescript
-import { Daniel } from '@daniel-murnane/core';
-
-const instance = new Daniel();
-
-async function createBasicTask() {
-  const task = await instance.createTask({
-    title: 'Review Pull Request',
-    priority: 'high',
-    deadline: '2024-04-25T15:00:00Z'
-  });
-
-  console.log(`Task created with ID: ${task.id}`);
-}
-```
-
-### Handling Multiple Tasks
+### Example 1: Influencer Loss &mdash; End-to-end Geometric Representation Learning for Track Reconstruction
 
 ```typescript
-async function handleMultipleTasks() {
-  const tasks = await instance.batchCreate([
-    {
-      title: 'Code Review',
-      priority: 'high',
-      estimatedDuration: '1h'
-    },
-    {
-      title: 'Documentation Update',
-      priority: 'medium',
-      estimatedDuration: '2h'
-    }
-  ]);
-
-  console.log(`Created ${tasks.length} tasks`);
-}
-```
-
-## Advanced Examples
-
-### Using Event Handlers
-
-```typescript
-instance.on('task.completed', (task) => {
-  console.log(`Task ${task.id} completed`);
-});
-
-instance.on('error', (error) => {
-  console.error('An error occurred:', error);
-});
-
-// Start a task with event monitoring
-await instance.createTask({
-  title: 'Long-running task',
-  onProgress: (progress) => {
-    console.log(`Progress: ${progress}%`);
-  }
+const talk = await daniel.present({
+  title: 'Influencer Loss: End-to-end Geometric Representation Learning for Track Reconstruction',
+  venue: 'CHEP 2024 — Computing in High Energy Physics',
+  date: '2024',
+  format: 'contributed',
+  proceedings: 'EPJ Web of Conferences 295, 09016',
+  doi: 'https://doi.org/10.1051/epjconf/202429509016'
 });
 ```
 
-### Implementing Retry Logic
+**Abstract:** A novel loss function for end-to-end geometric representation learning, designed to produce embeddings that respect the topology of charged particle trajectories. Tested on the ATLAS ITk reconstruction problem.
+
+---
+
+### Example 2: Physics Performance of the ATLAS GNN4ITk Track Reconstruction Chain
 
 ```typescript
-const task = await instance.createTask({
-  title: 'Sensitive Operation',
-  retryStrategy: {
-    attempts: 3,
-    backoff: {
-      type: 'exponential',
-      initialDelay: 1000
-    }
-  }
+const talk = await daniel.present({
+  title: 'Physics Performance of the ATLAS GNN4ITk Track Reconstruction Chain',
+  venue: 'CHEP 2024',
+  date: '2024',
+  format: 'contributed',
+  proceedings: 'EPJ Web of Conferences 295, 03030',
+  doi: 'https://doi.org/10.1051/epjconf/202429503030',
+  collaborators: ['S. Caillou', 'P. Calafiura', 'X. Ju', 'T.Q. Pham', 'C. Rougier', 'J. Stark', 'A. Vallier']
 });
 ```
 
-### Custom Rate Limiting
+**Abstract:** Production-grade physics performance of the GNN-based tracking pipeline being prepared for the ATLAS Inner Tracker upgrade. End-to-end results on simulated HL-LHC events, compared against the classical CKF baseline.
+
+---
+
+### Example 3: A Language Model for Particle Tracking
 
 ```typescript
-const customLimiter = new RateLimiter({
-  windowMs: 60000,  // 1 minute
-  maxRequests: 5
-});
-
-const instance = new Daniel({
-  rateLimiter: customLimiter
-});
-
-// This will respect the custom rate limits
-await instance.processBatch(items);
-```
-
-## Integration Examples
-
-### Express.js Integration
-
-```typescript
-import express from 'express';
-import { Daniel } from '@daniel-murnane/core';
-
-const app = express();
-const daniel = new Daniel();
-
-app.post('/tasks', async (req, res) => {
-  try {
-    const task = await daniel.createTask(req.body);
-    res.json(task);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
+const talk = await daniel.present({
+  title: 'A Language Model for Particle Tracking',
+  venue: 'ML4PS / arXiv:2402.10239',
+  date: '2024-02-14',
+  format: 'preprint + talk',
+  link: 'https://arxiv.org/abs/2402.10239'
 });
 ```
 
-### React Integration
+**Abstract:** Reframing particle tracking as a sequence modeling problem. Tokenizing detector hits and training a transformer to produce track candidates &mdash; an early experiment in physics language models.
+
+---
+
+## Tutorials & Workshops
+
+### Graph Neural Networks for Charged Particle Tracking
 
 ```typescript
-import { useState, useEffect } from 'react';
-import { Daniel } from '@daniel-murnane/core';
-
-function TaskManager() {
-  const [tasks, setTasks] = useState([]);
-  const daniel = new Daniel();
-
-  useEffect(() => {
-    const loadTasks = async () => {
-      const tasks = await daniel.listTasks();
-      setTasks(tasks);
-    };
-
-    loadTasks();
-  }, []);
-
-  return (
-    <div>
-      {tasks.map(task => (
-        <div key={task.id}>{task.title}</div>
-      ))}
-    </div>
-  );
-}
-```
-
-## Best Practices
-
-### Error Handling
-
-```typescript
-try {
-  await instance.createTask({
-    title: 'Important Task'
-  });
-} catch (error) {
-  if (error.code === 'RATE_LIMIT_EXCEEDED') {
-    // Wait and retry
-    await delay(1000);
-    return retry();
-  }
-  
-  if (error.code === 'INVALID_INPUT') {
-    // Handle validation errors
-    console.error('Validation failed:', error.details);
-  }
-  
-  // Handle other errors
-  throw error;
-}
-```
-
-### Resource Cleanup
-
-```typescript
-const instance = new Daniel();
-
-// Ensure proper cleanup
-process.on('SIGTERM', async () => {
-  await instance.shutdown();
-  process.exit(0);
+const tutorial = await daniel.teach({
+  title: 'Graph Neural Networks for Charged Particle Tracking',
+  event: 'CERN summer student lectures and various ML4HEP workshops',
+  materials: 'https://github.com/murnanedaniel',
+  level: 'intermediate'
 });
 ```
 
-## Performance Tips
+**Description:** Hands-on tutorial covering the full GNN tracking pipeline: graph construction from detector hits, edge classification, segment connection, and physics-performance evaluation. Includes runnable notebooks built on the Exa.TrkX framework.
 
-### Batch Operations
+---
 
-```typescript
-// Instead of multiple individual calls
-const batchResults = await instance.batchProcess([
-  { type: 'task1' },
-  { type: 'task2' },
-  { type: 'task3' }
-], {
-  concurrency: 3
-});
-```
+## Conference Proceedings
 
-### Caching Results
+A selection of the most relevant proceedings with associated talks. The full list lives on the [Publications](/publications) page.
 
-```typescript
-const instance = new Daniel({
-  cache: {
-    enabled: true,
-    ttl: 3600  // 1 hour
-  }
-});
+| Year | Title | Venue |
+|------|-------|-------|
+| 2024 | Influencer Loss: End-to-end Geometric Representation Learning for Track Reconstruction | CHEP 2024 (EPJ Web 295, 09016) |
+| 2024 | Physics Performance of the ATLAS GNN4ITk Track Reconstruction Chain | CHEP 2024 (EPJ Web 295, 03030) |
+| 2024 | A Language Model for Particle Tracking | arXiv:2402.10239 |
+| 2024 | Learning to Reconstruct Quirky Tracks | arXiv:2410.00269 |
 
-// Results will be cached
-const result = await instance.getFrequentlyAccessedData();
-``` 
+## How to Request a Demo
+
+Interested in a live demonstration, invited talk, or tutorial? See the [Contributing Guide](../guide/contributing) for booking protocols, or call `daniel.schedule()` directly.

@@ -1,315 +1,98 @@
-# Troubleshooting Guide
+# Troubleshooting
 
-This guide helps you diagnose and resolve common issues you might encounter while using the library.
+<!-- DANIEL: This is your "FAQ" page, reframed as troubleshooting/error codes.
+     Common questions people ask you, reframed as "errors" with "solutions."
+     This is a great place for personality and humor. -->
 
-## Common Issues
+This guide helps diagnose and resolve common issues encountered when interacting with the library.
 
-### Installation Problems
+## Common Error Codes
 
-#### npm Install Fails
+### `COFFEE_LEVEL_LOW`
 
-**Problem:**
-```bash
-npm ERR! code ERESOLVE
-npm ERR! ERESOLVE unable to resolve dependency tree
-```
+**Symptom:** Slow response times, reduced output quality, increased typo rate.
 
 **Solution:**
-1. Clear npm cache:
-   ```bash
-   npm cache clean --force
-   ```
-2. Delete node_modules:
-   ```bash
-   rm -rf node_modules package-lock.json
-   ```
-3. Reinstall with forced resolution:
-   ```bash
-   npm install --force
-   ```
-
-#### Version Conflicts
-
-**Problem:**
-```bash
-npm ERR! peer dep missing: @types/node@^16.0.0
-```
-
-**Solution:**
-```bash
-npm install --save-dev @types/node@^16.0.0
-```
-
-### Runtime Errors
-
-#### Memory Leaks
-
-**Problem:**
 ```typescript
-Error: FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+// Check current levels
+const status = await daniel.getCoffeeLevel();
+// => { level: 'critically-low', nextRefill: '10:30 CET' }
+
+// Resolution: wait for automatic refill cycle, or provide external coffee
+await daniel.refuel({ type: 'flat-white', origin: 'specialty' });
 ```
 
+### `CONTEXT_SWITCH_ERROR`
+
+**Symptom:** Confused responses after rapid topic changes.
+
+**Solution:** Allow a minimum 15-minute buffer between unrelated tasks. The library performs best with extended single-topic sessions.
+
+### `TIMEZONE_MISMATCH`
+
+**Symptom:** Meeting scheduled at 3 AM CET.
+
 **Solution:**
-1. Check for resource leaks:
-   ```typescript
-   // DO: Use resource cleanup
-   await instance.withResource('db', async (db) => {
-     // Resource automatically cleaned up
-   });
-
-   // DON'T: Forget to cleanup
-   const db = await instance.getResource('db');
-   // Missing cleanup
-   ```
-
-2. Increase memory limit if needed:
-   ```bash
-   export NODE_OPTIONS=--max-old-space-size=4096
-   ```
-
-#### Rate Limiting Issues
-
-**Problem:**
 ```typescript
-Error: Rate limit exceeded (429)
+// Always check timezone before scheduling
+console.log(daniel.timezone); // => 'Europe/Copenhagen'
+// Note: The library was compiled in Australia but is deployed in Denmark.
+// It still occasionally emits timestamps in AEST during periods of homesickness.
 ```
 
-**Solution:**
-1. Implement retry with backoff:
-   ```typescript
-   instance.setRetryStrategy({
-     attempts: 3,
-     backoff: {
-       type: 'exponential',
-       initialDelay: 1000
-     }
-   });
-   ```
+## Frequently Encountered Issues
 
-2. Check current limits:
-   ```typescript
-   const limits = await instance.getRateLimits();
-   console.log('Current usage:', limits.current);
-   console.log('Limit reset at:', limits.resetAt);
-   ```
+### "What exactly do you research?"
 
-### Configuration Issues
+<!-- DANIEL: Your elevator pitch, framed as a troubleshooting answer -->
 
-#### Invalid Configuration
+**Error:** `RESEARCH_DESCRIPTION_UNDERFLOW` — Insufficient context provided.
 
-**Problem:**
+**Resolution:** <!-- Write your 2-3 sentence elevator pitch here -->
+
+### "What's a Graph Neural Network?"
+
+**Error:** `PREREQUISITE_MISSING` — Concept not found in caller's knowledge base.
+
+**Resolution:** <!-- Your go-to explanation of GNNs for non-experts -->
+
+### "How is ML used in particle physics?"
+
+**Error:** `DOMAIN_BRIDGE_REQUIRED` — Cross-domain translation needed.
+
+**Resolution:** <!-- Your bridge explanation for CS people who don't know physics, or physicists who don't know ML -->
+
+### "Are you available for [talk/seminar/workshop]?"
+
+**Status:** Generally `AVAILABLE` — check current capacity:
+
 ```typescript
-Error: Invalid configuration: maxConcurrency must be a number
-```
-
-**Solution:**
-Validate configuration:
-```typescript
-const config = {
-  maxConcurrency: 5,
-  timeout: 30000,
-  retryAttempts: 3
-};
-
-// Validate before use
-const validatedConfig = await instance.validateConfig(config);
-```
-
-#### Environment Variables
-
-**Problem:**
-Configuration not loading from environment.
-
-**Solution:**
-1. Check environment variables:
-   ```typescript
-   console.log('Env:', process.env.DANIEL_ENV);
-   console.log('Config:', process.env.DANIEL_CONFIG);
-   ```
-
-2. Use configuration file:
-   ```typescript
-   instance.loadConfig('./daniel.config.js');
-   ```
-
-### Performance Issues
-
-#### Slow Operations
-
-**Problem:**
-Operations taking longer than expected.
-
-**Solution:**
-1. Enable performance monitoring:
-   ```typescript
-   instance.enableMonitoring({
-     metrics: ['latency', 'throughput'],
-     interval: 1000
-   });
-   ```
-
-2. Use batch operations:
-   ```typescript
-   // DO: Use batch processing
-   await instance.processBatch(items, {
-     batchSize: 100,
-     concurrency: 5
-   });
-
-   // DON'T: Process individually
-   for (const item of items) {
-     await instance.process(item);
-   }
-   ```
-
-#### High CPU Usage
-
-**Problem:**
-CPU usage consistently high.
-
-**Solution:**
-1. Check resource utilization:
-   ```typescript
-   const metrics = await instance.getResourceMetrics();
-   console.log('CPU Usage:', metrics.cpu);
-   console.log('Memory Usage:', metrics.memory);
-   ```
-
-2. Optimize concurrency:
-   ```typescript
-   instance.setResourceLimits({
-     maxConcurrency: 5,
-     maxMemory: '1GB',
-     cpuThreshold: 0.8
-   });
-   ```
-
-### Network Issues
-
-#### Connection Timeouts
-
-**Problem:**
-```typescript
-Error: Connection timeout after 5000ms
-```
-
-**Solution:**
-1. Adjust timeouts:
-   ```typescript
-   instance.setNetworkConfig({
-     timeout: 10000,
-     retries: 3,
-     keepAlive: true
-   });
-   ```
-
-2. Check network status:
-   ```typescript
-   const status = await instance.checkConnectivity();
-   console.log('Network Status:', status);
-   ```
-
-#### SSL/TLS Errors
-
-**Problem:**
-```typescript
-Error: UNABLE_TO_VERIFY_LEAF_SIGNATURE
-```
-
-**Solution:**
-Configure TLS:
-```typescript
-instance.setTlsConfig({
-  rejectUnauthorized: true,
-  ca: fs.readFileSync('ca.pem'),
-  checkServerIdentity: true
+const availability = await daniel.checkAvailability({
+  type: 'talk',
+  format: ['in-person', 'remote', 'hybrid'],
+  topics: ['GNNs', 'tracking', 'ML-for-physics', 'open-science']
 });
 ```
 
-## Debugging
+<!-- DANIEL: Add your actual policy on giving talks -->
 
-### Enable Debug Logging
+### "Can I join your group / collaborate?"
+
+<!-- DANIEL: How do people get involved? What are you looking for? -->
+
+**Resolution:** See the [Contributing Guide](./contributing) for collaboration protocols.
+
+## Debug Mode
+
+If unexpected behavior persists, enable verbose logging:
 
 ```typescript
-instance.setLogLevel('debug');
-instance.on('debug', (msg) => {
-  console.log('[DEBUG]', msg);
-});
-```
-
-### Use Debug Mode
-
-```typescript
-const instance = new Daniel({
+const daniel = new Daniel({
   debug: true,
-  trace: true,
-  logLevel: 'debug'
+  logLevel: 'verbose',
+  // Warning: may produce excessive output about particle physics
 });
 ```
 
-### Performance Profiling
-
-```typescript
-instance.startProfiling();
-await instance.processTask(task);
-const profile = instance.stopProfiling();
-console.log('Performance Profile:', profile);
-```
-
-## Support
-
-### Getting Help
-
-1. Check documentation
-2. Search issues on GitHub
-3. Contact support:
-   ```typescript
-   const ticket = await instance.createSupportTicket({
-     type: 'technical',
-     severity: 'medium',
-     description: 'Detailed problem description'
-   });
-   ```
-
-### Reporting Bugs
-
-1. Enable debug mode
-2. Collect logs
-3. Create minimal reproduction
-4. Submit issue on GitHub
-
-## Best Practices
-
-### Error Prevention
-
-1. **Validate Input**
-   ```typescript
-   instance.use(new ValidationMiddleware());
-   ```
-
-2. **Handle Errors**
-   ```typescript
-   try {
-     await instance.processTask(task);
-   } catch (error) {
-     if (error.isRetryable) {
-       await instance.retryTask(task);
-     }
-   }
-   ```
-
-### Monitoring
-
-1. **Health Checks**
-   ```typescript
-   const health = await instance.checkHealth();
-   console.log('System Status:', health.status);
-   ```
-
-2. **Metrics Collection**
-   ```typescript
-   instance.collectMetrics({
-     interval: 60000,
-     metrics: ['cpu', 'memory', 'latency']
-   });
-   ``` 
+<!-- DANIEL: Add more FAQ items as they come to mind. The format is flexible —
+     anything can be an "error code" with a "solution." -->

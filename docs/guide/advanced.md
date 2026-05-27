@@ -1,280 +1,97 @@
 # Advanced Usage
 
-This guide covers advanced features and patterns for power users.
+<!-- DANIEL: This is your "Current Projects" page.
+     Each project is an "advanced pattern" or "custom processor."
+     Describe what you're actively working on right now. -->
 
-## Custom Task Processors
+This guide covers advanced features and active development branches.
 
-### Creating Custom Processors
+## Active Development Branches
 
-Create specialized task processors for complex workflows:
+### GNN4ITk — Graph Neural Networks for ATLAS Inner Tracking
 
-```typescript
-class CustomProcessor implements TaskProcessor {
-  async process(task: Task): Promise<Result> {
-    // Custom processing logic
-    await this.preProcess(task);
-    const result = await this.executeTask(task);
-    await this.postProcess(result);
-    return result;
-  }
-
-  private async preProcess(task: Task): Promise<void> {
-    // Pre-processing logic
-  }
-
-  private async executeTask(task: Task): Promise<Result> {
-    // Core execution logic
-  }
-
-  private async postProcess(result: Result): Promise<void> {
-    // Post-processing logic
-  }
-}
-```
-
-### Registering Custom Processors
+<!-- DANIEL: Your main project. Describe it in the API-docs voice. -->
 
 ```typescript
-const instance = new Daniel();
-instance.registerProcessor('custom', new CustomProcessor());
-
-// Use custom processor
-await instance.createTask({
-  type: 'custom',
-  data: { /* task data */ }
-});
-```
-
-## Middleware System
-
-### Creating Middleware
-
-```typescript
-interface Middleware {
-  pre?(task: Task): Promise<Task>;
-  post?(result: Result): Promise<Result>;
-  error?(error: Error): Promise<void>;
-}
-
-class LoggingMiddleware implements Middleware {
-  async pre(task: Task): Promise<Task> {
-    console.log(`Processing task: ${task.id}`);
-    return task;
-  }
-
-  async post(result: Result): Promise<Result> {
-    console.log(`Task completed: ${result.taskId}`);
-    return result;
-  }
-
-  async error(error: Error): Promise<void> {
-    console.error(`Task failed: ${error.message}`);
-  }
-}
-```
-
-### Using Middleware
-
-```typescript
-const instance = new Daniel();
-instance.use(new LoggingMiddleware());
-instance.use(new MetricsMiddleware());
-instance.use(new ValidationMiddleware());
-```
-
-## Advanced Event Patterns
-
-### Event Filtering
-
-```typescript
-instance.on('task.completed', 
-  { priority: 'high' }, 
-  async (task) => {
-    // Handle only high-priority task completions
-  }
-);
-```
-
-### Event Aggregation
-
-```typescript
-const aggregator = new EventAggregator();
-aggregator.group('task.completed')
-  .by('type')
-  .window(TimeWindow.MINUTE)
-  .count()
-  .threshold(100)
-  .onThreshold(async (group, count) => {
-    // Handle high task completion rate
-  });
-```
-
-## Custom Resource Management
-
-### Resource Pool Configuration
-
-```typescript
-const customPool = new ResourcePool({
-  name: 'compute',
-  min: 5,
-  max: 20,
-  createResource: async () => {
-    // Custom resource creation
-  },
-  validateResource: async (resource) => {
-    // Custom validation
-  },
-  destroyResource: async (resource) => {
-    // Custom cleanup
-  }
-});
-
-instance.registerResourcePool(customPool);
-```
-
-### Resource Borrowing
-
-```typescript
-await instance.withResource('compute', async (resource) => {
-  // Use resource
-  await resource.process(data);
-  // Resource automatically returned to pool
-});
-```
-
-## Advanced Scheduling
-
-### Custom Scheduling Strategies
-
-```typescript
-class PriorityScheduler implements Scheduler {
-  async schedule(tasks: Task[]): Promise<void> {
-    const sorted = this.prioritize(tasks);
-    for (const task of sorted) {
-      await this.executeTask(task);
-    }
-  }
-
-  private prioritize(tasks: Task[]): Task[] {
-    return tasks.sort((a, b) => {
-      // Custom prioritization logic
-    });
-  }
-}
-
-instance.setScheduler(new PriorityScheduler());
-```
-
-### Batch Processing with Dependencies
-
-```typescript
-const batch = new TaskBatch()
-  .add('task1', { /* config */ })
-  .add('task2', { /* config */ })
-  .dependsOn('task2', 'task1')
-  .onComplete((results) => {
-    // Handle batch completion
-  });
-
-await instance.executeBatch(batch);
-```
-
-## Performance Optimization
-
-### Custom Caching Strategies
-
-```typescript
-class LRUCache implements CacheStrategy {
-  async get(key: string): Promise<any> {
-    // LRU cache implementation
-  }
-
-  async set(key: string, value: any): Promise<void> {
-    // LRU cache implementation
-  }
-}
-
-instance.setCacheStrategy(new LRUCache());
-```
-
-### Memory Management
-
-```typescript
-instance.setMemoryPolicy({
-  maxHeapSize: '2GB',
-  gcThreshold: 0.8,
-  onMemoryPressure: async () => {
-    // Handle memory pressure
+const gnn4itk = daniel.createProject({
+  name: 'GNN4ITk',
+  status: 'production-candidate',
+  collaboration: 'ATLAS',
+  description: 'Graph neural network pipeline for HL-LHC track reconstruction',
+  scale: {
+    input: '150k spacepoints per event',
+    output: 'reconstructed particle tracks',
+    performance: '...'  // fill in your metrics
   }
 });
 ```
 
-## Advanced Error Handling
+**What it does:** <!-- 2-3 paragraphs about GNN4ITk -->
 
-### Custom Error Recovery
+**Current status:** <!-- Where is it now? What's next? -->
 
-```typescript
-class CustomRecoveryStrategy implements RecoveryStrategy {
-  async recover(error: Error, context: Context): Promise<void> {
-    switch (error.code) {
-      case 'RESOURCE_EXHAUSTED':
-        await this.handleResourceExhaustion(context);
-        break;
-      case 'RATE_LIMITED':
-        await this.handleRateLimit(context);
-        break;
-      default:
-        throw error;
-    }
-  }
-}
+### ChATLAS
 
-instance.setRecoveryStrategy(new CustomRecoveryStrategy());
-```
-
-### Circuit Breaker Pattern
+<!-- DANIEL: Fill in what ChATLAS stands for / does -->
 
 ```typescript
-const breaker = new CircuitBreaker({
-  failureThreshold: 5,
-  resetTimeout: 60000,
-  onOpen: () => {
-    // Handle circuit open
-  },
-  onClose: () => {
-    // Handle circuit close
-  }
+const chatlas = daniel.createProject({
+  name: 'ChATLAS',
+  status: '...',
+  description: '...'
 });
-
-instance.useCircuitBreaker(breaker);
 ```
 
-## Monitoring and Telemetry
+**What it does:** <!-- Describe ChATLAS -->
 
-### Custom Metrics Collection
+### PLM
+
+<!-- DANIEL: Fill in what PLM stands for / does -->
 
 ```typescript
-class CustomMetricsCollector implements MetricsCollector {
-  async collect(metrics: Metric[]): Promise<void> {
-    // Custom metrics collection logic
-  }
-}
-
-instance.setMetricsCollector(new CustomMetricsCollector());
+const plm = daniel.createProject({
+  name: 'PLM',
+  status: '...',
+  description: '...'
+});
 ```
 
-### Advanced Logging
+**What it does:** <!-- Describe PLM -->
+
+## Other Active Modules
+
+<!-- DANIEL: Add any other projects you're working on. Each gets a code block + description. -->
+
+### Project Name
 
 ```typescript
-instance.setLogger({
-  level: 'debug',
-  format: 'json',
-  destination: new CloudWatchDestination(),
-  correlationId: true,
-  sampling: {
-    rate: 0.1,
-    rules: [
-      { pattern: 'error.*', rate: 1.0 }
-    ]
-  }
-}); 
+const project = daniel.createProject({
+  name: '...',
+  status: '...',
+  description: '...'
+});
+```
+
+## Experimental Features
+
+<!-- DANIEL: Anything you're exploring but hasn't become a full project yet.
+     Early-stage ideas, side projects, "what if" explorations. -->
+
+::: warning Experimental
+These features are in active development and may change without notice.
+:::
+
+- **Feature 1**: <!-- description -->
+- **Feature 2**: <!-- description -->
+
+## Integration with External Systems
+
+<!-- DANIEL: Collaborations with other groups, cross-experiment work, etc. -->
+
+The library integrates with several external systems:
+
+| System | Integration Level | Description |
+|--------|------------------|-------------|
+| ATLAS | Production | Core deployment environment |
+| IRIS-HEP | Active | <!-- describe --> |
+| <!-- other --> | <!-- level --> | <!-- describe --> |

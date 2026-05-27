@@ -18,7 +18,7 @@ constructor(options: DanielOptions)
 
 ### Methods
 
-#### schedule(options: ScheduleOptions): Promise<Meeting>
+#### schedule(options: ScheduleOptions): Promise\<Meeting\>
 
 Schedule a meeting or task with Daniel.
 
@@ -38,7 +38,7 @@ interface Meeting {
 }
 ```
 
-#### async think(problem: Problem): Promise<Solution>
+#### async think(problem: Problem): Promise\<Solution\>
 
 Engage Daniel's problem-solving capabilities.
 

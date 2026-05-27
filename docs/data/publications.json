@@ -1,0 +1,711 @@
+{
+  "author": {
+    "name": "Daniel Murnane",
+    "orcid": "0000-0003-4046-4822",
+    "openalex_id": "A5011421008",
+    "stats": {
+      "works_count": 36,
+      "cited_by_count": 369,
+      "h_index": 8,
+      "i10_index": 7,
+      "2yr_mean_citedness": 6.142857142857143
+    }
+  },
+  "publications": [
+    {
+      "title": "Learning to Reconstruct Quirky Tracks",
+      "authors": [
+        "Q. Sha",
+        "Daniel Murnane",
+        "Max Fieg",
+        "Shelley Tong",
+        "Mark Zakharyan",
+        "Yaquan Fang",
+        "Daniel Whiteson"
+      ],
+      "date": "2024-09-30",
+      "doi": "https://doi.org/10.48550/arxiv.2410.00269",
+      "type": "preprint",
+      "cited_by_count": 0,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2410.00269"
+    },
+    {
+      "title": "A Language Model for Particle Tracking",
+      "authors": [
+        "Andris Huang",
+        "Yash Melkani",
+        "P. Calafiura",
+        "Alina Lazar",
+        "Daniel Murnane",
+        "Minhtuan Pham",
+        "X. Ju"
+      ],
+      "date": "2024-02-14",
+      "doi": "https://doi.org/10.48550/arxiv.2402.10239",
+      "type": "preprint",
+      "cited_by_count": 1,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2402.10239"
+    },
+    {
+      "title": "Physics Performance of the ATLAS GNN4ITk Track Reconstruction Chain",
+      "authors": [
+        "Sylvain Caillou",
+        "P. Calafiura",
+        "X. Ju",
+        "Daniel Murnane",
+        "Tuan Q. Pham",
+        "C. Rougier",
+        "Jan Stark",
+        "A. Vallier"
+      ],
+      "date": "2024-01-01",
+      "doi": "https://doi.org/10.1051/epjconf/202429503030",
+      "type": "article",
+      "cited_by_count": 8,
+      "source": "EPJ Web of Conferences",
+      "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2024/05/epjconf_chep2024_03030.pdf"
+    },
+    {
+      "title": "Influencer Loss: End-to-end Geometric Representation Learning for Track Reconstruction",
+      "authors": [
+        "Daniel Murnane"
+      ],
+      "date": "2024-01-01",
+      "doi": "https://doi.org/10.1051/epjconf/202429509016",
+      "type": "article",
+      "cited_by_count": 0,
+      "source": "EPJ Web of Conferences",
+      "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2024/05/epjconf_chep2024_09016.pdf"
+    },
+    {
+      "title": "Equivariance Is Not All You Need: Characterizing the Utility of Equivariant Graph Neural Networks for Particle Physics Tasks",
+      "authors": [
+        "S. J. Thais",
+        "Daniel Murnane"
+      ],
+      "date": "2023-11-06",
+      "doi": "https://doi.org/10.48550/arxiv.2311.03094",
+      "type": "preprint",
+      "cited_by_count": 3,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2311.03094"
+    },
+    {
+      "title": "Graph Neural Networks for Radiological/Nuclear Detection with Static Detector Networks",
+      "authors": [
+        "M. D. Verlie",
+        "Daniel Murnane",
+        "Anastasiia Butko",
+        "R.J. Cooper",
+        "Mariam Kiran",
+        "E. Rofors",
+        "K. Vetter"
+      ],
+      "date": "2023-11-04",
+      "doi": "https://doi.org/10.1109/nssmicrtsd49126.2023.10338743",
+      "type": "article",
+      "cited_by_count": 2,
+      "source": "",
+      "open_access_url": null
+    },
+    {
+      "title": "Deep Learning for Tritium Detection Using Scientific CCDs",
+      "authors": [
+        "E. Rofors",
+        "R.J. Cooper",
+        "R. Heller",
+        "Daniel Murnane",
+        "Benjamin Nachman"
+      ],
+      "date": "2023-11-04",
+      "doi": "https://doi.org/10.1109/nssmicrtsd49126.2023.10338219",
+      "type": "article",
+      "cited_by_count": 0,
+      "source": "",
+      "open_access_url": null
+    },
+    {
+      "title": "Graph Structure from Point Clouds: Geometric Attention is All You Need",
+      "authors": [
+        "Daniel Murnane"
+      ],
+      "date": "2023-07-31",
+      "doi": "https://doi.org/10.48550/arxiv.2307.16662",
+      "type": "preprint",
+      "cited_by_count": 1,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2307.16662"
+    },
+    {
+      "title": "Heterogeneous Graph Neural Network for identifying hadronically decayed tau leptons at the High Luminosity LHC",
+      "authors": [
+        "Andris Huang",
+        "X. Ju",
+        "Jacob Lyons",
+        "Daniel Murnane",
+        "M. Pettee",
+        "Landon Reed"
+      ],
+      "date": "2023-07-01",
+      "doi": "https://doi.org/10.1088/1748-0221/18/07/p07001",
+      "type": "article",
+      "cited_by_count": 9,
+      "source": "Journal of Instrumentation",
+      "open_access_url": "https://iopscience.iop.org/article/10.1088/1748-0221/18/07/P07001/pdf"
+    },
+    {
+      "title": "CTD2022: ATLAS ITk Track Reconstruction with a GNN-based Pipeline",
+      "authors": [
+        "C. Rougier",
+        "A. Vallier",
+        "Daniel Murnane",
+        "Jan Stark",
+        "P. Calafiura",
+        "Steven Farrell",
+        "Sylvain Caillou",
+        "X. Ju"
+      ],
+      "date": "2023-06-26",
+      "doi": "https://doi.org/10.5281/zenodo.8119763",
+      "type": "paratext",
+      "cited_by_count": 0,
+      "source": "Zenodo (CERN European Organization for Nuclear Research)",
+      "open_access_url": "https://doi.org/10.5281/zenodo.8119763"
+    },
+    {
+      "title": "CTD2022: ATLAS ITk Track Reconstruction with a GNN-based Pipeline",
+      "authors": [
+        "C. Rougier",
+        "A. Vallier",
+        "Daniel Murnane",
+        "Jan Stark",
+        "P. Calafiura",
+        "Steven Farrell",
+        "Sylvain Caillou",
+        "X. Ju"
+      ],
+      "date": "2023-06-26",
+      "doi": "https://doi.org/10.5281/zenodo.8187248",
+      "type": "paratext",
+      "cited_by_count": 0,
+      "source": "Zenodo (CERN European Organization for Nuclear Research)",
+      "open_access_url": "https://doi.org/10.5281/zenodo.8187248"
+    },
+    {
+      "title": "CTD2022: ATLAS ITk Track Reconstruction with a GNN-based Pipeline",
+      "authors": [
+        "Sylvain Caillou",
+        "P. Calafiura",
+        "Steven Farrell",
+        "X. Ju",
+        "Daniel Murnane",
+        "C. Rougier",
+        "Jan Stark",
+        "A. Vallier"
+      ],
+      "date": "2023-06-26",
+      "doi": "https://doi.org/10.5281/zenodo.8119762",
+      "type": "preprint",
+      "cited_by_count": 3,
+      "source": "HAL (Le Centre pour la Communication Scientifique Directe)",
+      "open_access_url": "https://hal.science/hal-03793565"
+    },
+    {
+      "title": "Equivariant Graph Neural Networks for Charged Particle Tracking",
+      "authors": [
+        "Daniel Murnane",
+        "S. J. Thais",
+        "Ameya Thete"
+      ],
+      "date": "2023-04-11",
+      "doi": "https://doi.org/10.48550/arxiv.2304.05293",
+      "type": "preprint",
+      "cited_by_count": 4,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2304.05293"
+    },
+    {
+      "title": "Hierarchical Graph Neural Networks for Particle Track Reconstruction",
+      "authors": [
+        "Ryan Liu",
+        "P. Calafiura",
+        "Steven Farrell",
+        "X. Ju",
+        "Daniel Murnane",
+        "Tuan Minh Pham"
+      ],
+      "date": "2023-03-03",
+      "doi": "https://doi.org/10.48550/arxiv.2303.01640",
+      "type": "preprint",
+      "cited_by_count": 4,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2303.01640"
+    },
+    {
+      "title": "Semi-Equivariant GNN Architectures for Jet Tagging",
+      "authors": [
+        "Daniel Murnane",
+        "S. J. Thais",
+        "Jason W.H. Wong"
+      ],
+      "date": "2023-02-01",
+      "doi": "https://doi.org/10.1088/1742-6596/2438/1/012121",
+      "type": "article",
+      "cited_by_count": 5,
+      "source": "Journal of Physics Conference Series",
+      "open_access_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012121/pdf"
+    },
+    {
+      "title": "Graph Neural Network for Object Reconstruction in Liquid Argon Time Projection Chambers",
+      "authors": [
+        "K. Gumpula",
+        "N Koloskov",
+        "Daniel Grzenda",
+        "V Hewes",
+        "A. Aurisano",
+        "G. B. Cerati",
+        "A. A. Day",
+        "J Kowalkowski",
+        "C. Lee",
+        "K. Wang",
+        "Wei\u2010keng Liao",
+        "M. Spiropulu",
+        "Ankit Agrawal",
+        "J. R. Vlimant",
+        "L. Gray",
+        "T. Klijnsma",
+        "P Calafiura",
+        "Sean Conlon",
+        "Steven Farrell",
+        "X. Ju",
+        "Daniel Murnane"
+      ],
+      "date": "2023-02-01",
+      "doi": "https://doi.org/10.1088/1742-6596/2438/1/012091",
+      "type": "article",
+      "cited_by_count": 3,
+      "source": "Journal of Physics Conference Series",
+      "open_access_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012091/pdf"
+    },
+    {
+      "title": "Reconstruction of Large Radius Tracks with the Exa.TrkX pipeline",
+      "authors": [
+        "Chunyi Wang",
+        "X. Ju",
+        "S.\u2010C. Hsu",
+        "Daniel Murnane",
+        "P. Calafiura",
+        "Steven Farrell",
+        "Z. Zhang",
+        "Jean-Roch Vlimant",
+        "A. Aurisano",
+        "G. A. Horton-Smith",
+        "G. B. Cerati",
+        "L. Gray",
+        "T. Klijnsma",
+        "Jim Kowalkowski",
+        "R. J. Atkin",
+        "D. Orestano",
+        "Gage Dezoort",
+        "S. J. Thais",
+        "Alexandra Ballow",
+        "Alina Lazar",
+        "Sylvain Caillou",
+        "C. Rougier",
+        "G. H. Stark",
+        "A. Vallier",
+        "J. Sardain"
+      ],
+      "date": "2023-02-01",
+      "doi": "https://doi.org/10.1088/1742-6596/2438/1/012117",
+      "type": "article",
+      "cited_by_count": 0,
+      "source": "Journal of Physics Conference Series",
+      "open_access_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012117/pdf"
+    },
+    {
+      "title": "Heterogeneous Graph Neural Network for Identifying Hadronically Decayed Tau Leptons at the High Luminosity LHC",
+      "authors": [
+        "Andris Huang",
+        "X. Ju",
+        "Jacob Lyons",
+        "Daniel Murnane",
+        "M. Pettee",
+        "Landon Reed"
+      ],
+      "date": "2023-01-02",
+      "doi": "https://doi.org/10.48550/arxiv.2301.00501",
+      "type": "preprint",
+      "cited_by_count": 0,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2301.00501"
+    },
+    {
+      "title": "Applying and optimizing the Exa.TrkX Pipeline on the OpenDataDetector with ACTS",
+      "authors": [
+        "Benjamin Huth",
+        "P. Calafiura",
+        "L. Heinrich",
+        "X. Ju",
+        "Alina Lazar",
+        "Daniel Murnane",
+        "A. Salzburger",
+        "Tilo Wettig"
+      ],
+      "date": "2022-12-03",
+      "doi": "https://doi.org/10.22323/1.414.0227",
+      "type": "article",
+      "cited_by_count": 0,
+      "source": "Proceedings of 41st International Conference on High Energy physics \u2014 PoS(ICHEP2022)",
+      "open_access_url": "https://pos.sissa.it/414/227/pdf"
+    },
+    {
+      "title": "Benchmarking GPU and TPU Performance with Graph Neural Networks",
+      "authors": [
+        "xiangyang Ju",
+        "Yunsong Wang",
+        "Daniel Murnane",
+        "Nicholas Choma",
+        "Steven Farrell",
+        "P. Calafiura"
+      ],
+      "date": "2022-10-21",
+      "doi": "https://doi.org/10.48550/arxiv.2210.12247",
+      "type": "preprint",
+      "cited_by_count": 2,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2210.12247"
+    },
+    {
+      "title": "Graph Neural Networks in Particle Physics: Implementations, Innovations, and Challenges",
+      "authors": [
+        "S. J. Thais",
+        "P. Calafiura",
+        "Grigorios Chachamis",
+        "G. Dezoort",
+        "J. Duarte",
+        "Sanmay Ganguly",
+        "M. Kagan",
+        "Daniel Murnane",
+        "M. S. Neubauer",
+        "K. Terao"
+      ],
+      "date": "2022-03-23",
+      "doi": "https://doi.org/10.48550/arxiv.2203.12852",
+      "type": "preprint",
+      "cited_by_count": 16,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2203.12852"
+    },
+    {
+      "title": "Symmetry Group Equivariant Architectures for Physics",
+      "authors": [
+        "Alexander Bogatskiy",
+        "S. Ganguly",
+        "Thomas Kipf",
+        "Risi Kondor",
+        "David W. Miller",
+        "Daniel Murnane",
+        "Jan T. Offermann",
+        "M. Pettee",
+        "Phiala E. Shanahan",
+        "C. O. Shimmin",
+        "S. J. Thais"
+      ],
+      "date": "2022-03-11",
+      "doi": "https://doi.org/10.48550/arxiv.2203.06153",
+      "type": "preprint",
+      "cited_by_count": 4,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2203.06153"
+    },
+    {
+      "title": "Semi-Equivariant GNN Architectures for Jet Tagging",
+      "authors": [
+        "Daniel Murnane",
+        "S. J. Thais",
+        "Jason W.H. Wong"
+      ],
+      "date": "2022-02-14",
+      "doi": "https://doi.org/10.48550/arxiv.2202.06941",
+      "type": "preprint",
+      "cited_by_count": 0,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2202.06941"
+    },
+    {
+      "title": "Performance of a geometric deep learning pipeline for HL-LHC particle tracking",
+      "authors": [
+        "X. Ju",
+        "Daniel Murnane",
+        "P. Calafiura",
+        "Nicholas Choma",
+        "Sean Conlon",
+        "Steve Farrell",
+        "Yaoyuan Xu",
+        "M. Spiropulu",
+        "Jean-Roch Vlimant",
+        "A. Aurisano",
+        "Jeremy Hewes",
+        "G. B. Cerati",
+        "L. Gray",
+        "T. Klijnsma",
+        "Jim Kowalkowski",
+        "Markus Julian Atkinson",
+        "M. S. Neubauer",
+        "G. Dezoort",
+        "Savannah Jennifer Thais",
+        "Aditi Chauhan",
+        "A. J. Schuy",
+        "S.\u2010C. Hsu",
+        "Alex Ballow",
+        "and Alina Lazar"
+      ],
+      "date": "2021-10-01",
+      "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
+      "type": "preprint",
+      "cited_by_count": 2,
+      "source": "The European Physical Journal C",
+      "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-021-09675-8.pdf"
+    },
+    {
+      "title": "Convergent Bayesian global fits of 4D composite Higgs models",
+      "authors": [
+        "Ethan Carragher",
+        "Will Handley",
+        "Daniel Murnane",
+        "Peter Stangl",
+        "Wei Su",
+        "M. J. White",
+        "Anthony G. Williams"
+      ],
+      "date": "2021-05-01",
+      "doi": "https://doi.org/10.1007/jhep05(2021)237",
+      "type": "preprint",
+      "cited_by_count": 0,
+      "source": "Journal of High Energy Physics",
+      "open_access_url": "https://link.springer.com/content/pdf/10.1007/JHEP05(2021)237.pdf"
+    },
+    {
+      "title": "Performance of a Geometric Deep Learning Pipeline for HL-LHC Particle\\n Tracking",
+      "authors": [
+        "X. Ju",
+        "Daniel Murnane",
+        "P. Calafiura",
+        "Nicholas Choma",
+        "Sean Conlon",
+        "Steven Farrell",
+        "Yaoyuan Xu",
+        "M. Spiropulu",
+        "Jean-Roch Vlimant",
+        "A. Aurisano",
+        "Jeremy Hewes",
+        "G. B. Cerati",
+        "L. Gray",
+        "T. Klijnsma",
+        "Jim Kowalkowski",
+        "Markus Julian Atkinson",
+        "M. S. Neubauer",
+        "G. Dezoort",
+        "S. J. Thais",
+        "Aditi Chauhan",
+        "A. J. Schuy",
+        "S.\u2010C. Hsu",
+        "Alex Ballow",
+        "Alina Lazar"
+      ],
+      "date": "2021-03-11",
+      "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
+      "type": "article",
+      "cited_by_count": 71,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2103.06995"
+    },
+    {
+      "title": "Physics and Computing Performance of the Exa.TrkX TrackML Pipeline.",
+      "authors": [
+        "X. Ju",
+        "Daniel Murnane",
+        "P. Calafiura",
+        "Nicholas Choma",
+        "Sean Conlon",
+        "Steven Farrell",
+        "Yaoyuan Xu",
+        "M. Spiropulu",
+        "Jean-Roch Vlimant",
+        "A. Aurisano",
+        "Jeremy Hewes",
+        "G. B. Cerati",
+        "L. Gray",
+        "T. Klijnsma",
+        "Jim Kowalkowski",
+        "Markus Julian Atkinson",
+        "M. S. Neubauer",
+        "G. Dezoort",
+        "S. J. Thais",
+        "Aditi Chauhan",
+        "A. J. Schuy",
+        "S.\u2010C. Hsu",
+        "Alexandra Ballow",
+        "Alina Lazar"
+      ],
+      "date": "2021-03-11",
+      "doi": null,
+      "type": "preprint",
+      "cited_by_count": 1,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "http://export.arxiv.org/pdf/2103.06995"
+    },
+    {
+      "title": "Graph Neural Network for Object Reconstruction in Liquid Argon Time Projection Chambers",
+      "authors": [
+        "Jeremy Hewes",
+        "A. Aurisano",
+        "G. B. Cerati",
+        "Jim Kowalkowski",
+        "Claire Lee",
+        "Wei\u2010keng Liao",
+        "Alexandra Day",
+        "Ankit Agrawal",
+        "M. Spiropulu",
+        "Jean-Roch Vlimant",
+        "L. Gray",
+        "T. Klijnsma",
+        "P. Calafiura",
+        "Sean Conlon",
+        "Steve Farrell",
+        "X. Ju",
+        "Daniel Murnane"
+      ],
+      "date": "2021-01-01",
+      "doi": "https://doi.org/10.1051/epjconf/202125103054",
+      "type": "article",
+      "cited_by_count": 12,
+      "source": "EPJ Web of Conferences",
+      "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2021/05/epjconf_chep2021_03054.pdf"
+    },
+    {
+      "title": "Track Seeding and Labelling with Embedded-space Graph Neural Networks",
+      "authors": [
+        "Nicholas Choma",
+        "Daniel Murnane",
+        "X. Ju",
+        "P. Calafiura",
+        "Sean Conlon",
+        "Steven Farrell",
+        "Prabhat",
+        "G. B. Cerati",
+        "L. Gray",
+        "T. Klijnsma",
+        "Jim Kowalkowski",
+        "Panagiotis Spentzouris",
+        "Jean-Roch Vlimant",
+        "M. Spiropulu",
+        "A. Aurisano",
+        "Jeremy Hewes",
+        "Aristeidis Tsaris",
+        "K. Terao",
+        "Tracy Usher"
+      ],
+      "date": "2020-06-30",
+      "doi": "https://doi.org/10.48550/arxiv.2007.00149",
+      "type": "preprint",
+      "cited_by_count": 11,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2007.00149"
+    },
+    {
+      "title": "Graph Neural Networks for Particle Reconstruction in High Energy Physics detectors",
+      "authors": [
+        "X. Ju",
+        "Steven Farrell",
+        "P. Calafiura",
+        "Daniel Murnane",
+        "Prabhat",
+        "L. Gray",
+        "T. Klijnsma",
+        "K. Pedro",
+        "G. B. Cerati",
+        "Jim Kowalkowski",
+        "Gabriel Perdue",
+        "Panagiotis Spentzouris",
+        "Nhan Viet Tran",
+        "Jean-Roch Vlimant",
+        "Alexander Zlokapa",
+        "Joosep Pata",
+        "M. Spiropulu",
+        "S. An",
+        "A. Aurisano",
+        "Jeremy Hewes",
+        "Aristeidis Tsaris",
+        "K. Terao",
+        "Tracy Usher"
+      ],
+      "date": "2020-03-25",
+      "doi": "https://doi.org/10.48550/arxiv.2003.11603",
+      "type": "preprint",
+      "cited_by_count": 83,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2003.11603"
+    },
+    {
+      "title": "Minimal 4D Composite Higgs Models Under Current LHC Constraints",
+      "authors": [
+        "Ethan Carragher",
+        "Daniel Murnane",
+        "Peter Stangl",
+        "Wei Su",
+        "M. J. White",
+        "Anthony G. Williams"
+      ],
+      "date": "2020-01-01",
+      "doi": "https://doi.org/10.1051/epjconf/202024506006",
+      "type": "article",
+      "cited_by_count": 0,
+      "source": "EPJ Web of Conferences",
+      "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2020/21/epjconf_chep2020_06006.pdf"
+    },
+    {
+      "title": "The Landscape of Composite Higgs Models",
+      "authors": [
+        "Daniel Murnane"
+      ],
+      "date": "2019-01-01",
+      "doi": "https://doi.org/10.13140/rg.2.2.27345.28005",
+      "type": "dissertation",
+      "cited_by_count": 2,
+      "source": "Adelaide Research & Scholarship (AR&S) (University of Adelaide)",
+      "open_access_url": "http://hdl.handle.net/2440/122586"
+    },
+    {
+      "title": "ColliderBit: a GAMBIT module for the calculation of high-energy collider observables and likelihoods",
+      "authors": [
+        "Csaba Bal\u00e1zs",
+        "A. G. Buckley",
+        "Lars A. Dal",
+        "Ben Farmer",
+        "P. Jackson",
+        "Abram Krislock",
+        "Anders Kvellestad",
+        "Daniel Murnane",
+        "Antje Putze",
+        "Are Raklev",
+        "Christopher Sean Rogan",
+        "Aldo Saavedra",
+        "Pat Scott",
+        "Christoph Weniger",
+        "M. J. White",
+        "Martin White"
+      ],
+      "date": "2017-11-01",
+      "doi": "https://doi.org/10.1140/epjc/s10052-017-5285-8",
+      "type": "article",
+      "cited_by_count": 88,
+      "source": "The European Physical Journal C",
+      "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
+    }
+  ],
+  "last_updated": "2026-02-06T09:43:47.995201Z"
+}

@@ -1,249 +1,73 @@
 # Security Policy
 
-## Supported Versions
+<!-- DANIEL: This is your "Work-Life Balance / Boundaries" page.
+     It's a playful "security policy" about your boundaries, availability,
+     meeting limits, and self-care practices. Have fun with this one. -->
 
-Only the latest major version receives security updates. Minor versions receive updates for 6 months after release.
+## Supported Operating Hours
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 2.1.x   | :white_check_mark: |
-| 2.0.x   | :white_check_mark: |
-| 1.2.x   | :x:                |
-| < 1.2   | :x:                |
+The library operates within defined security boundaries to ensure sustained long-term performance. Exceeding these limits may result in degraded output quality.
 
-## Reporting a Vulnerability
+| Window | Hours (CET) | Status |
+|--------|-------------|--------|
+| Deep Work | 09:00 - 12:00 | `FOCUS_MODE` — no interrupts |
+| Collaborative | 13:00 - 17:00 | `AVAILABLE` |
+| Maintenance | 18:00 - 08:00 | `MAINTENANCE_MODE` |
+| Weekend | All day Sat-Sun | `LOW_POWER` |
 
-We take security vulnerabilities seriously. Please follow these steps to report a vulnerability:
+<!-- DANIEL: Adjust these to your actual preferences and add humor -->
 
-1. **DO NOT** open a public issue on GitHub
-2. Email security@daniel-core.dev with:
-   - Description of the vulnerability
-   - Steps to reproduce
-   - Potential impact
-   - Affected versions
+## Rate Limiting
 
-We will acknowledge receipt within 24 hours and provide a detailed response within 72 hours.
-
-## Security Best Practices
-
-### Authentication
-
-1. **API Key Management**
-   ```typescript
-   // DO: Use environment variables
-   const instance = new Daniel({
-     apiKey: process.env.DANIEL_API_KEY
-   });
-
-   // DON'T: Hardcode credentials
-   const instance = new Daniel({
-     apiKey: 'secret-key-123' // NEVER do this
-   });
-   ```
-
-2. **Token Rotation**
-   ```typescript
-   // Implement regular token rotation
-   instance.setTokenRotation({
-     interval: '7d',
-     overlap: '1h'
-   });
-   ```
-
-### Data Protection
-
-1. **Sensitive Data Handling**
-   ```typescript
-   // Use built-in encryption for sensitive data
-   instance.setSensitiveFields(['ssn', 'creditCard']);
-   ```
-
-2. **Data Sanitization**
-   ```typescript
-   // Always sanitize input
-   instance.use(new InputSanitizer());
-   ```
-
-### Network Security
-
-1. **TLS Configuration**
-   ```typescript
-   instance.setTlsConfig({
-     minVersion: 'TLSv1.2',
-     ciphers: ['TLS_AES_128_GCM_SHA256'],
-     verifyPeer: true
-   });
-   ```
-
-2. **Request Signing**
-   ```typescript
-   instance.setRequestSigning({
-     algorithm: 'sha256',
-     includeHeaders: ['date', 'host'],
-     expiry: '15m'
-   });
-   ```
-
-## Security Features
-
-### Rate Limiting
+To prevent resource exhaustion, the following rate limits are enforced:
 
 ```typescript
 instance.setRateLimits({
-  global: {
-    maxRequests: 1000,
-    windowMs: 60000
+  meetings: {
+    maxPerDay: 4,          // More than this -> cognitive overflow
+    maxConsecutive: 2,     // Buffer time required between blocks
+    cooldownMinutes: 30    // Minimum gap between meetings
   },
-  perIp: {
-    maxRequests: 100,
-    windowMs: 60000
+  email: {
+    responseTime: '24h',   // Don't expect instant replies
+    batchProcessing: true  // Emails processed in batches, not real-time
   },
-  perToken: {
-    maxRequests: 500,
-    windowMs: 60000
+  slackDMs: {
+    responseTime: '4h',    // Faster than email, slower than you'd like
+    threads: 'preferred'   // Keep it in the thread
   }
 });
 ```
 
-### Input Validation
+## Vulnerability Disclosure
 
-```typescript
-instance.setValidationRules({
-  input: {
-    maxSize: '1mb',
-    allowedTypes: ['application/json'],
-    sanitize: true
-  },
-  fields: {
-    email: 'email',
-    phone: 'phone',
-    url: 'url'
-  }
-});
-```
+<!-- DANIEL: What are your "vulnerabilities"? Weaknesses? Things that crash the system?
+     e.g., bad coffee, meetings without agendas, "quick questions" that are actually 2-hour tasks -->
 
-### Audit Logging
+Known vulnerabilities (will not fix):
 
-```typescript
-instance.setAuditLogging({
-  enabled: true,
-  events: ['auth', 'data-access', 'config-change'],
-  retention: '90d',
-  destination: 's3://audit-logs'
-});
-```
-
-## Compliance
-
-### Data Privacy
-
-1. **GDPR Compliance**
-   ```typescript
-   instance.setPrivacySettings({
-     dataRetention: '30d',
-     userConsent: true,
-     rightToErasure: true
-   });
-   ```
-
-2. **Data Encryption**
-   ```typescript
-   instance.setEncryption({
-     atRest: {
-       algorithm: 'AES-256-GCM',
-       keyRotation: '90d'
-     },
-     inTransit: {
-       tls: true,
-       minVersion: 'TLSv1.2'
-     }
-   });
-   ```
-
-### Access Control
-
-1. **Role-Based Access**
-   ```typescript
-   instance.setRbacPolicy({
-     roles: {
-       admin: ['read', 'write', 'delete'],
-       user: ['read', 'write'],
-       guest: ['read']
-     },
-     default: 'guest'
-   });
-   ```
-
-2. **IP Restrictions**
-   ```typescript
-   instance.setIpRestrictions({
-     allowlist: ['10.0.0.0/8'],
-     denylist: ['192.168.1.0/24'],
-     defaultPolicy: 'deny'
-   });
-   ```
+| Vulnerability | Severity | Mitigation |
+|---------------|----------|------------|
+| `COFFEE_DEPENDENCY` | Critical | Ensure adequate supply; Danish roasts preferred |
+| `MEETING_WITHOUT_AGENDA` | High | Always include an agenda or meeting will be declined |
+| `SCOPE_CREEP` | Medium | Define deliverables upfront |
+| <!-- add more --> | <!-- --> | <!-- --> |
 
 ## Incident Response
 
-### Detection
+If the library becomes unresponsive:
 
-```typescript
-instance.setSecurityMonitoring({
-  alerts: {
-    bruteForce: {
-      threshold: 5,
-      window: '5m',
-      action: 'block'
-    },
-    unusualActivity: {
-      enabled: true,
-      sensitivity: 'high'
-    }
-  }
-});
-```
+1. Check `coffeeLevel` — replenish if below threshold
+2. Verify current `mode` — may be in `DEEP_FOCUS` (do not disturb)
+3. Consult the [Troubleshooting Guide](./troubleshooting)
+4. If all else fails, try again tomorrow
 
-### Response
+## Compliance
 
-1. **Automatic Blocking**
-   ```typescript
-   instance.setBlockingRules({
-    conditions: [
-      { type: 'rate-limit-exceeded', duration: '1h' },
-      { type: 'invalid-auth', attempts: 5, duration: '24h' }
-    ]
-   });
-   ```
+The library adheres to the following standards:
 
-2. **Notifications**
-   ```typescript
-   instance.setSecurityNotifications({
-    channels: ['email', 'slack'],
-    severity: ['high', 'critical'],
-    recipients: ['security-team@company.com']
-   });
-   ```
+- **Work-Life Balance Protocol v2.0**: Strict enforcement of off-hours
+- **Danish Work Culture Specification**: Leave at 16:30, no guilt
+- **Academic Freedom License**: May occasionally disappear into a research rabbit hole
 
-## Regular Updates
-
-Keep your dependencies up to date:
-```bash
-# Check for security updates
-npm audit
-
-# Update dependencies
-npm update @daniel-murnane/core
-```
-
-## Security Checklist
-
-- [ ] Enable TLS for all connections
-- [ ] Configure proper authentication
-- [ ] Set up rate limiting
-- [ ] Enable audit logging
-- [ ] Configure input validation
-- [ ] Set up monitoring and alerts
-- [ ] Review security policies regularly
-- [ ] Keep dependencies updated
-- [ ] Train team on security practices
-- [ ] Document incident response procedures 
+<!-- DANIEL: Add/modify all of the above to match your actual personality and preferences -->

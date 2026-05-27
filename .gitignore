@@ -1,1 +1,15 @@
 resources/
+
+# VitePress build + cache artifacts
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+docs/.vitepress/deps_temp_*/
+
+# OS / editor
+.DS_Store
+*.log
+.idea/
+.vscode/
+
+# Node — going forward; tree may still have committed node_modules from before.
+# node_modules/

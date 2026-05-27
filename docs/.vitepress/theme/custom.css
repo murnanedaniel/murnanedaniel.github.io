@@ -24,4 +24,23 @@
   height: 48px !important;
   width: auto !important;
   max-height: none !important;
+}
+
+/* Hide VitePress chrome on landing page so proposals are full-bleed */
+.landing-page-switcher ~ .VPDoc,
+.landing-page-switcher + .VPDoc {
+  padding: 0;
+}
+
+/* When on a page using the switcher, remove content padding */
+.vp-doc.landing-page-switcher {
+  padding: 0;
+  max-width: none;
+}
+
+/* Remove the content wrapper padding on the homepage */
+.is-home .VPContent,
+.is-home .VPDoc .container .content {
+  padding: 0 !important;
+  max-width: none !important;
 } 

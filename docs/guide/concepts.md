@@ -1,212 +1,71 @@
 # Core Concepts
 
-This guide explains the fundamental concepts and principles behind the library's design and operation.
+This guide explains the fundamental concepts and design principles behind the library &mdash; the intellectual choices that shape how `@daniel-murnane/core` approaches research problems.
 
-## Task Management
+## Graph Thinking
 
-### Tasks and Operations
+The foundational abstraction is the **graph**. Nearly every problem the library encounters is internally represented as a graph before processing:
 
-Tasks are the fundamental unit of work in the system. Each task:
-- Has a unique identifier
-- Contains metadata (priority, deadline, etc.)
-- Can be scheduled, paused, or cancelled
-- Emits events during its lifecycle
-
-### Priority Levels
-
-Tasks can be assigned different priority levels:
 ```typescript
-enum Priority {
-  LOW = 'low',
-  MEDIUM = 'medium',
-  HIGH = 'high',
-  CRITICAL = 'critical'
+interface WorldView {
+  representation: 'graph';
+  reason: 'everything-is-connected';
+  nodes: Entity[];        // particles, people, ideas, detector hits
+  edges: Relationship[];  // interactions, collaborations, citations, track segments
 }
 ```
 
-### Task Lifecycle
+Particle physics events are graphs by construction. A high-energy collision produces hundreds of charged particles that leave hits across a layered silicon detector; reconstructing the original trajectories from those hits is fundamentally a problem of asking *"which hits belong to the same particle?"* &mdash; a graph problem on a node set of ~150,000 detector hits per event. Classical combinatorial trackers solve this with hand-crafted heuristics over local geometry; graph neural networks solve it by learning the relevant structure end-to-end.
 
-1. **Creation**: Task is initialized with parameters
-2. **Validation**: Parameters are validated
-3. **Scheduling**: Task is queued for execution
-4. **Execution**: Task is processed
-5. **Completion**: Results are returned
-6. **Cleanup**: Resources are released
+The library generalizes that intuition. Citation networks, collaboration networks, the hierarchical structure of a detector readout, the dependency graph of a research project &mdash; if it has nodes and edges, it gets the same toolkit.
 
-## Resource Management
+## Physics-Informed Design
 
-### Resource Types
+The library enforces a strict constraint: **models must respect the physics**.
 
-The system manages several types of resources:
-- Computational resources
-- Memory allocation
-- Network connections
-- External service connections
-
-### Resource Pools
-
-Resources are managed in pools:
 ```typescript
-interface ResourcePool {
-  maxSize: number;
-  currentSize: number;
-  available: number;
-  type: ResourceType;
+interface DesignPrinciple {
+  name: 'physics-informed';
+  constraints: [
+    'respect-symmetries',     // gauge, Lorentz, permutation
+    'conserve-quantities',    // energy, momentum, charge
+    'geometric-consistency'   // detector frame is not arbitrary
+  ];
+  philosophy: 'the-physics-is-not-optional';
 }
 ```
 
-### Resource Allocation
+A model that predicts a particle's momentum but doesn't conserve total momentum across a collision is, formally, wrong. Equivariant architectures &mdash; networks whose outputs transform correctly under the symmetries of the underlying problem &mdash; aren't a clever optimization; they're the right starting point. The same logic extends beyond physics: a recommender that doesn't respect causality, a forecaster that doesn't conserve probability, a search ranker that ignores transitivity &mdash; they're all making the same kind of mistake.
 
-Resources are allocated using a priority-based system:
-1. High-priority tasks get first access
-2. Fair scheduling for same-priority tasks
-3. Resource limits are enforced
-4. Deadlock prevention is implemented
+## From Detector to Discovery
 
-## Event System
+The core pipeline implements a staged transformation:
 
-### Event Types
+1. **Raw Data** &mdash; Detector hits, billions per second. At the HL-LHC, ~40 MHz collision rate with ~200 simultaneous collisions per crossing.
+2. **Pattern Recognition** &mdash; Graph neural networks identify which hits belong to the same particle track.
+3. **Reconstruction** &mdash; Physics objects (tracks, vertices, jets, leptons) emerge from the identified patterns.
+4. **Analysis** &mdash; Statistical inference and, occasionally, new physics emerges from the objects.
 
-The system emits various types of events:
-- Task lifecycle events
-- Resource state changes
-- Error events
-- System status updates
+The interesting research lives at the seams between stages, where assumptions made by one stage leak into the next. Tracking quality determines vertex quality determines jet quality determines analysis sensitivity. Improving any one stage is a constraint satisfaction problem against every stage downstream.
 
-### Event Handling
+## Scalability as a Research Problem
 
-Events can be handled synchronously or asynchronously:
 ```typescript
-// Synchronous handler
-instance.on('task.created', (task) => {
-  console.log(`New task: ${task.id}`);
-});
-
-// Async handler
-instance.on('task.completed', async (task) => {
-  await notifyCompletion(task);
-});
+const hlLhcChallenge = {
+  pileup: 200,                  // simultaneous collisions per crossing
+  hits: '~150,000 per event',   // spacepoints to process
+  rate: '40 MHz',               // collision rate
+  constraint: 'real-time',      // can't store everything
+  currentSolution: 'GNNs'       // the library's specialty
+};
 ```
 
-## Concurrency Model
+The High-Luminosity LHC will produce more data than any prior experiment by an order of magnitude. The traditional response &mdash; "wait for Moore's law" &mdash; ran out about a decade ago. The current response is twofold: model architectures with sub-quadratic scaling in the number of detector hits, and hardware-aware implementations that run on the heterogeneous compute available at CERN. Most of the interesting tracking research today is at this intersection.
 
-### Thread Pool
+## Collaboration as a Feature
 
-The system maintains a configurable thread pool:
-```typescript
-interface ThreadPool {
-  minThreads: number;
-  maxThreads: number;
-  idleTimeout: number;
-}
-```
+The library is designed for **large-scale collaborative deployment**. It operates within the ATLAS collaboration (~3,000 physicists) and interfaces with multiple research groups simultaneously.
 
-### Task Scheduling
+Big science runs on a strange social technology: papers with hundreds of authors, internal review processes longer than most software releases, shared codebases that have to work for everyone for a decade. The good ideas here are organizational as much as technical. Tooling that respects how collaborations actually work &mdash; that supports replication, that makes it cheap to disagree productively, that lets new contributors find their way in &mdash; is usually more valuable than a marginally better model.
 
-Tasks are scheduled using various strategies:
-- Round-robin
-- Priority-based
-- Fair scheduling
-- Work stealing
-
-## Error Handling
-
-### Error Types
-
-The system defines several error categories:
-- Validation errors
-- Resource errors
-- Runtime errors
-- System errors
-
-### Error Recovery
-
-Error recovery mechanisms include:
-- Automatic retry with backoff
-- Fallback strategies
-- Circuit breaking
-- Graceful degradation
-
-## Monitoring and Metrics
-
-### Key Metrics
-
-The system tracks important metrics:
-- Task throughput
-- Resource utilization
-- Error rates
-- Response times
-
-### Health Checks
-
-Health checks are performed on:
-- System components
-- Resource pools
-- External dependencies
-- Task queues
-
-## Security Model
-
-### Authentication
-
-Multiple authentication methods:
-- API keys
-- OAuth tokens
-- Client certificates
-
-### Authorization
-
-Role-based access control:
-```typescript
-enum Permission {
-  READ = 'read',
-  WRITE = 'write',
-  ADMIN = 'admin'
-}
-```
-
-## Data Model
-
-### Core Entities
-
-The system operates on these core entities:
-```typescript
-interface Task {
-  id: string;
-  type: TaskType;
-  priority: Priority;
-  status: TaskStatus;
-  metadata: Record<string, unknown>;
-}
-
-interface Resource {
-  id: string;
-  type: ResourceType;
-  status: ResourceStatus;
-  capacity: number;
-}
-
-interface Event {
-  id: string;
-  type: EventType;
-  timestamp: Date;
-  payload: unknown;
-}
-```
-
-## Best Practices
-
-1. **Resource Management**
-   - Always release resources after use
-   - Use resource pools appropriately
-   - Monitor resource utilization
-
-2. **Error Handling**
-   - Implement proper error boundaries
-   - Use appropriate retry strategies
-   - Log errors with context
-
-3. **Performance**
-   - Batch operations when possible
-   - Use appropriate concurrency levels
-   - Monitor system metrics 
+The library has strong opinions about all of this, and they leak into every interface it exposes.

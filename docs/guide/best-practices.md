@@ -1,274 +1,114 @@
 # Best Practices
 
-This guide outlines recommended practices for using the library effectively in production environments.
+<!-- DANIEL: This is your "Mentoring & Advising" page.
+     Frame your mentoring philosophy as "best practices for getting optimal performance
+     from the library." What have you learned about working with students, postdocs,
+     collaborators? What advice do you give? -->
 
-## Architecture
+This guide outlines recommended practices for achieving optimal performance when working with the library.
 
-### Instance Management
+## Getting Started with the Library
 
-1. **Singleton Pattern**
-   ```typescript
-   // DO: Create a single instance for your application
-   const instance = new Daniel();
-   export default instance;
+<!-- DANIEL: Advice for new students/collaborators joining your group or working with you -->
 
-   // DON'T: Create multiple instances unnecessarily
-   function someFunction() {
-     const instance = new Daniel(); // Bad practice
-   }
-   ```
+### For New Users (Students)
 
-2. **Configuration Management**
-   ```typescript
-   // DO: Use environment-specific configuration
-   const instance = new Daniel({
-     environment: process.env.NODE_ENV,
-     logLevel: process.env.NODE_ENV === 'production' ? 'info' : 'debug'
-   });
+```typescript
+// DO: Start with a well-defined problem
+const project = await daniel.mentor({
+  level: 'student',
+  approach: 'guided',
+  scope: 'well-defined',
+  meetingFrequency: 'weekly'
+});
 
-   // DON'T: Hardcode configuration
-   const instance = new Daniel({
-     environment: 'production', // Bad practice
-     logLevel: 'debug'         // Bad practice
-   });
-   ```
+// DON'T: Try to solve everything at once
+const project = await daniel.mentor({
+  scope: 'boil-the-ocean'  // SCOPE_OVERFLOW error
+});
+```
 
-## Resource Management
+**Key principles:**
+<!-- DANIEL: What do you tell new students? -->
 
-### Memory Usage
+1. <!-- Principle 1 -->
+2. <!-- Principle 2 -->
+3. <!-- Principle 3 -->
 
-1. **Batch Processing**
-   ```typescript
-   // DO: Process large datasets in batches
-   const items = await getLargeDataset();
-   for (const batch of chunk(items, 100)) {
-     await instance.processBatch(batch);
-   }
+### For Experienced Users (Collaborators)
 
-   // DON'T: Process everything at once
-   await instance.processBatch(items); // May cause memory issues
-   ```
+```typescript
+const collaboration = await daniel.collaborate({
+  mode: 'peer-to-peer',
+  communication: 'async-first',
+  codeReview: true,
+  whiteboard: 'on-demand'
+});
+```
 
-2. **Resource Cleanup**
-   ```typescript
-   // DO: Use the withResource pattern
-   await instance.withResource('database', async (db) => {
-     await db.query(/* ... */);
-   }); // Resources automatically cleaned up
+## Research Workflow
 
-   // DON'T: Manually manage resources
-   const db = await instance.getResource('database');
-   try {
-     await db.query(/* ... */);
-   } finally {
-     await db.release(); // Error-prone
-   }
-   ```
+<!-- DANIEL: Your recommended research workflow / methodology -->
 
-## Error Handling
+### The Ideal Pipeline
 
-### Retry Strategies
+1. **Start with the physics** — What question are you actually trying to answer?
+2. **Literature review** — What has been tried? (Check arXiv, not just Google)
+3. **Prototype fast** — Get a minimal version working before optimizing
+4. **Measure everything** — If you can't plot it, you don't understand it
+5. **Write as you go** — The paper is not something you do "at the end"
 
-1. **Exponential Backoff**
-   ```typescript
-   // DO: Use exponential backoff for retries
-   const task = await instance.createTask({
-     retryStrategy: {
-       attempts: 3,
-       backoff: {
-         type: 'exponential',
-         initialDelay: 1000
-       }
-     }
-   });
+<!-- Modify the above to match your actual philosophy -->
 
-   // DON'T: Use fixed delays
-   const task = await instance.createTask({
-     retryStrategy: {
-       attempts: 3,
-       delay: 1000 // Less effective
-     }
-   });
-   ```
+### Common Anti-Patterns
 
-2. **Error Classification**
-   ```typescript
-   // DO: Handle different error types appropriately
-   try {
-     await instance.processTask(task);
-   } catch (error) {
-     if (error instanceof RateLimitError) {
-       await handleRateLimit(error);
-     } else if (error instanceof ValidationError) {
-       await handleValidation(error);
-     } else {
-       throw error; // Rethrow unknown errors
-     }
-   }
+```typescript
+// Anti-pattern: Premature optimization
+const model = new GNN({ layers: 47, features: 2048 });
+// Start simple. Add complexity only when the simple version fails.
 
-   // DON'T: Catch all errors without discrimination
-   try {
-     await instance.processTask(task);
-   } catch (error) {
-     console.error(error); // Bad practice
-   }
-   ```
+// Anti-pattern: Training without understanding
+model.fit(data);  // "It works!" — but do you know WHY?
 
-## Performance
+// Best practice: Understand, then scale
+const baseline = new SimpleModel();
+const results = await baseline.evaluate(data);
+// Now you have something to compare against.
+```
 
-### Caching
+## Communication Protocols
 
-1. **Strategic Caching**
-   ```typescript
-   // DO: Cache expensive operations
-   const result = await instance.withCache('expensive-op', async () => {
-     return await performExpensiveOperation();
-   }, { ttl: 3600 });
+<!-- DANIEL: How do you prefer to communicate? Meeting style? Email vs Slack? -->
 
-   // DON'T: Cache everything
-   const result = await instance.withCache('simple-op', async () => {
-     return 1 + 1; // Unnecessary caching
-   });
-   ```
+| Method | Best For | Response SLA |
+|--------|----------|-------------|
+| Email | Formal requests, paper drafts | <!-- timeframe --> |
+| Slack/Mattermost | Quick questions, links | <!-- timeframe --> |
+| In-person | Whiteboarding, debugging, brainstorming | <!-- how to schedule --> |
+| Video call | Remote collaboration | <!-- how to schedule --> |
 
-2. **Cache Invalidation**
-   ```typescript
-   // DO: Use specific cache invalidation
-   await instance.invalidateCache('user:' + userId);
+## Supervision Style
 
-   // DON'T: Clear entire cache
-   await instance.clearCache(); // Too broad
-   ```
+<!-- DANIEL: What's your mentoring/supervision philosophy? What can students expect? -->
 
-## Monitoring
+```typescript
+const supervisionConfig = {
+  style: 'collaborative',
+  meetings: {
+    frequency: 'weekly',
+    duration: '1h',
+    format: 'discussion-not-status-update'
+  },
+  expectations: {
+    independence: 'high',
+    communication: 'proactive',
+    mistakes: 'encouraged-and-expected'
+  }
+};
+```
 
-### Metrics Collection
+## Teaching Philosophy
 
-1. **Custom Metrics**
-   ```typescript
-   // DO: Track business-relevant metrics
-   instance.trackMetric('order_processing_time', timer.elapsed(), {
-     customer: order.customerId,
-     region: order.region
-   });
+<!-- DANIEL: Brief section on how you approach teaching -->
 
-   // DON'T: Track everything
-   instance.trackMetric('function_called', 1); // Too generic
-   ```
-
-2. **Health Checks**
-   ```typescript
-   // DO: Implement meaningful health checks
-   instance.addHealthCheck('database', async () => {
-     const result = await testDatabaseConnection();
-     return {
-       status: result.connected ? 'healthy' : 'unhealthy',
-       latency: result.latency,
-       details: result.metadata
-     };
-   });
-
-   // DON'T: Use simplistic checks
-   instance.addHealthCheck('service', () => true); // Too simple
-   ```
-
-## Security
-
-### Authentication
-
-1. **Token Management**
-   ```typescript
-   // DO: Use secure token handling
-   instance.setAuthStrategy(new OAuth2Strategy({
-     secure: true,
-     tokenRefreshWindow: 300 // Refresh 5 mins before expiry
-   }));
-
-   // DON'T: Use basic auth in production
-   instance.setAuthStrategy(new BasicAuthStrategy()); // Insecure
-   ```
-
-2. **Sensitive Data**
-   ```typescript
-   // DO: Use secure configuration
-   instance.setCredentials({
-     type: 'vault',
-     path: 'secrets/api-keys'
-   });
-
-   // DON'T: Hardcode credentials
-   instance.setApiKey('1234567890'); // Never do this
-   ```
-
-## Testing
-
-### Test Organization
-
-1. **Test Categories**
-   ```typescript
-   // DO: Organize tests by category
-   describe('Task Processing', () => {
-     describe('Validation', () => {
-       it('should validate input');
-     });
-     describe('Processing', () => {
-       it('should process valid input');
-     });
-   });
-
-   // DON'T: Mix concerns
-   describe('Tasks', () => {
-     it('should do everything'); // Too broad
-   });
-   ```
-
-2. **Mock Usage**
-   ```typescript
-   // DO: Use meaningful mocks
-   const mockResource = {
-     process: jest.fn().mockImplementation(async (data) => {
-       // Simulate actual behavior
-       return transform(data);
-     })
-   };
-
-   // DON'T: Use empty mocks
-   const mockResource = {
-     process: jest.fn() // Too simple
-   };
-   ```
-
-## Deployment
-
-### Version Management
-
-1. **Dependency Management**
-   ```typescript
-   // DO: Lock dependency versions
-   {
-     "dependencies": {
-       "@daniel-murnane/core": "^2.1.0"
-     }
-   }
-
-   // DON'T: Use latest
-   {
-     "dependencies": {
-       "@daniel-murnane/core": "*" // Dangerous
-     }
-   }
-   ```
-
-2. **Feature Flags**
-   ```typescript
-   // DO: Use feature flags for rollouts
-   instance.setFeatureFlags({
-     newAlgorithm: process.env.ENABLE_NEW_ALGORITHM === 'true',
-     beta: user.isBetaTester
-   });
-
-   // DON'T: Use environment checks
-   if (process.env.NODE_ENV === 'staging') { // Inflexible
-     useNewAlgorithm();
-   }
-   ``` 
+<!-- Write about your teaching approach, courses you've taught, what you value in education -->

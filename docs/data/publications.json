@@ -5,10 +5,10 @@
     "openalex_id": "A5011421008",
     "stats": {
       "works_count": 38,
-      "cited_by_count": 396,
+      "cited_by_count": 397,
       "h_index": 9,
       "i10_index": 7,
-      "2yr_mean_citedness": 6.7
+      "2yr_mean_citedness": 6.8
     }
   },
   "publications": [
@@ -446,7 +446,7 @@
         "Jan T. Offermann",
         "M. Pettee",
         "Phiala E. Shanahan",
-        "C. O. Shimmin",
+        "Chase Owen Shimmin",
         "S. J. Thais"
       ],
       "date": "2022-03-11",
@@ -754,5 +754,5 @@
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     }
   ],
-  "last_updated": "2026-06-07T01:03:03.995747Z"
+  "last_updated": "2026-06-14T01:05:18.397510Z"
 }

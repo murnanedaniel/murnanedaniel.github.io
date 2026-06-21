@@ -4,14 +4,84 @@
     "orcid": "0000-0003-4046-4822",
     "openalex_id": "A5011421008",
     "stats": {
-      "works_count": 38,
+      "works_count": 40,
       "cited_by_count": 397,
       "h_index": 9,
       "i10_index": 7,
-      "2yr_mean_citedness": 6.8
+      "2yr_mean_citedness": 5.666666666666667
     }
   },
   "publications": [
+    {
+      "title": "First functional prototype for the reconstruction of charged particle tracks using machine learning in the ATLAS experiment at the HL-LHC",
+      "authors": [
+        "Jan Stark",
+        "Aleksandra Poreba",
+        "Alexis Vallier",
+        "Alina Lazar",
+        "Benjamin Huth",
+        "C Collard",
+        "Daniel Murnane",
+        "Heberth Torres",
+        "Jackson Carl Burzynski",
+        "Jared Dynes Burleson",
+        "Jay Chan",
+        "Levi Condren",
+        "Mark Neubauer",
+        "Miles Cochran-Branson",
+        "Minh Tuan Pham",
+        "P Calafiura",
+        "P. Butti",
+        "Prachi Atmasiddha",
+        "Santosh Parajuli",
+        "Sebastian Dittmeier",
+        "Sylvain Caillou",
+        "Warren Guerin",
+        "Xiangyang Ju",
+        "Yuan-Tang Chou"
+      ],
+      "date": "2026-06-11",
+      "doi": null,
+      "type": "other",
+      "cited_by_count": 0,
+      "source": "CERN Document Server (European Organization for Nuclear Research)",
+      "open_access_url": null
+    },
+    {
+      "title": "Accelerating GNN Inference for the GNN4ITk Pipeline in ATLAS",
+      "authors": [
+        "Aleksandra Poreba",
+        "Alexis Vallier",
+        "Alina Lazar",
+        "Benjamin Huth",
+        "Christophe Collard",
+        "Daniel Murnane",
+        "Heberth Torres",
+        "Jackson Carl Burzynski",
+        "Jan Stark",
+        "Jared Dynes Burleson",
+        "Jay Chan",
+        "Levi Condren",
+        "Mark Neubauer",
+        "Miles Cochran-Branson",
+        "Minh Tuan Pham",
+        "P Calafiura",
+        "P. Butti",
+        "Prachi Atmasiddha",
+        "Santosh Parajuli",
+        "Sebastian Dittmeier",
+        "Sylvain Caillou",
+        "Warren Guerin",
+        "Xiangyang Ju",
+        "Yuan-Tang Chou"
+      ],
+      "date": "2026-06-11",
+      "doi": null,
+      "type": "other",
+      "cited_by_count": 0,
+      "source": "International Linear Collider",
+      "open_access_url": null
+    },
     {
       "title": "Hierarchical Graph Neural Networks for Particle Track Reconstruction",
       "authors": [
@@ -723,8 +793,8 @@
       "doi": "https://doi.org/10.13140/rg.2.2.27345.28005",
       "type": "dissertation",
       "cited_by_count": 2,
-      "source": "Adelaide Research & Scholarship (AR&S) (University of Adelaide)",
-      "open_access_url": "http://hdl.handle.net/2440/122586"
+      "source": "ArXiv.org",
+      "open_access_url": "https://arxiv.org/pdf/2606.18364"
     },
     {
       "title": "ColliderBit: a GAMBIT module for the calculation of high-energy collider observables and likelihoods",
@@ -754,5 +824,5 @@
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     }
   ],
-  "last_updated": "2026-06-14T01:05:18.397510Z"
+  "last_updated": "2026-06-21T01:07:05.100349Z"
 }

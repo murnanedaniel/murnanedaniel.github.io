@@ -5,10 +5,10 @@
     "openalex_id": "A5011421008",
     "stats": {
       "works_count": 40,
-      "cited_by_count": 397,
+      "cited_by_count": 399,
       "h_index": 9,
-      "i10_index": 7,
-      "2yr_mean_citedness": 5.666666666666667
+      "i10_index": 8,
+      "2yr_mean_citedness": 5.75
     }
   },
   "publications": [
@@ -79,7 +79,7 @@
       "doi": null,
       "type": "other",
       "cited_by_count": 0,
-      "source": "International Linear Collider",
+      "source": "CERN Document Server (European Organization for Nuclear Research)",
       "open_access_url": null
     },
     {
@@ -145,7 +145,7 @@
       "doi": null,
       "type": "other",
       "cited_by_count": 0,
-      "source": "",
+      "source": "CERN Document Server (European Organization for Nuclear Research)",
       "open_access_url": null
     },
     {
@@ -199,7 +199,7 @@
       "date": "2024-01-01",
       "doi": "https://doi.org/10.1051/epjconf/202429503030",
       "type": "article",
-      "cited_by_count": 9,
+      "cited_by_count": 10,
       "source": "EPJ Web of Conferences",
       "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2024/05/epjconf_chep2024_03030.pdf"
     },
@@ -346,7 +346,7 @@
       "type": "preprint",
       "cited_by_count": 3,
       "source": "HAL (Le Centre pour la Communication Scientifique Directe)",
-      "open_access_url": "https://hal.science/hal-03793565"
+      "open_access_url": "https://doi.org/10.5281/zenodo.8119762"
     },
     {
       "title": "Semi-Equivariant GNN Architectures for Jet Tagging",
@@ -624,7 +624,7 @@
       "date": "2021-03-11",
       "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
       "type": "article",
-      "cited_by_count": 73,
+      "cited_by_count": 74,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2103.06995"
     },
@@ -793,7 +793,7 @@
       "doi": "https://doi.org/10.13140/rg.2.2.27345.28005",
       "type": "dissertation",
       "cited_by_count": 2,
-      "source": "ArXiv.org",
+      "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2606.18364"
     },
     {
@@ -824,5 +824,5 @@
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     }
   ],
-  "last_updated": "2026-06-28T01:00:10.595360Z"
+  "last_updated": "2026-07-05T00:49:14.669092Z"
 }

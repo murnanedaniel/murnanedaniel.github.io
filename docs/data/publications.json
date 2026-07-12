@@ -5,10 +5,10 @@
     "openalex_id": "A5011421008",
     "stats": {
       "works_count": 40,
-      "cited_by_count": 399,
+      "cited_by_count": 404,
       "h_index": 9,
       "i10_index": 8,
-      "2yr_mean_citedness": 5.75
+      "2yr_mean_citedness": 6.0
     }
   },
   "publications": [
@@ -211,7 +211,7 @@
       "date": "2024-01-01",
       "doi": "https://doi.org/10.1051/epjconf/202429509016",
       "type": "article",
-      "cited_by_count": 0,
+      "cited_by_count": 1,
       "source": "EPJ Web of Conferences",
       "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2024/05/epjconf_chep2024_09016.pdf"
     },
@@ -624,7 +624,7 @@
       "date": "2021-03-11",
       "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
       "type": "article",
-      "cited_by_count": 74,
+      "cited_by_count": 75,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2103.06995"
     },
@@ -699,7 +699,7 @@
       "date": "2021-01-01",
       "doi": "https://doi.org/10.1051/epjconf/202125103054",
       "type": "article",
-      "cited_by_count": 12,
+      "cited_by_count": 13,
       "source": "EPJ Web of Conferences",
       "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2021/05/epjconf_chep2021_03054.pdf"
     },
@@ -824,5 +824,5 @@
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     }
   ],
-  "last_updated": "2026-07-05T00:49:14.669092Z"
+  "last_updated": "2026-07-12T02:54:03.966327Z"
 }

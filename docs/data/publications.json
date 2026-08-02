@@ -5,10 +5,10 @@
     "openalex_id": "A5011421008",
     "stats": {
       "works_count": 41,
-      "cited_by_count": 409,
+      "cited_by_count": 410,
       "h_index": 9,
       "i10_index": 8,
-      "2yr_mean_citedness": 5.769230769230769
+      "2yr_mean_citedness": 5.846153846153846
     }
   },
   "publications": [
@@ -366,7 +366,7 @@
       "date": "2025-03-06",
       "doi": "https://doi.org/10.1140/epjc/s10052-024-13701-w",
       "type": "article",
-      "cited_by_count": 46,
+      "cited_by_count": 47,
       "source": "The European Physical Journal C",
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-024-13701-w.pdf"
     },
@@ -1157,5 +1157,5 @@
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     }
   ],
-  "last_updated": "2026-07-26T02:54:15.823723Z"
+  "last_updated": "2026-08-02T02:53:30.514436Z"
 }

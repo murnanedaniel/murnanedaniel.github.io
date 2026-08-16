@@ -4,11 +4,11 @@
     "orcid": "0000-0003-4046-4822",
     "openalex_id": "A5011421008",
     "stats": {
-      "works_count": 41,
-      "cited_by_count": 410,
+      "works_count": 42,
+      "cited_by_count": 417,
       "h_index": 9,
       "i10_index": 8,
-      "2yr_mean_citedness": 5.846153846153846
+      "2yr_mean_citedness": 5.928571428571429
     }
   },
   "publications": [
@@ -81,6 +81,24 @@
       "cited_by_count": 0,
       "source": "CERN Document Server (European Organization for Nuclear Research)",
       "open_access_url": null
+    },
+    {
+      "title": "Learning to reconstruct quirky tracks",
+      "authors": [
+        "Q. Sha",
+        "Daniel Murnane",
+        "Max Fieg",
+        "Shelley Tong",
+        "Mark Zakharyan",
+        "Yaquan Fang",
+        "D. Whiteson"
+      ],
+      "date": "2026-06-09",
+      "doi": "https://doi.org/10.1103/dvzc-lgj1",
+      "type": "article",
+      "cited_by_count": 0,
+      "source": "Physical review. D/Physical review. D.",
+      "open_access_url": "https://doi.org/10.1103/dvzc-lgj1"
     },
     {
       "title": "Hierarchical Graph Neural Networks for Particle Track Reconstruction",
@@ -366,7 +384,7 @@
       "date": "2025-03-06",
       "doi": "https://doi.org/10.1140/epjc/s10052-024-13701-w",
       "type": "article",
-      "cited_by_count": 48,
+      "cited_by_count": 54,
       "source": "The European Physical Journal C",
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-024-13701-w.pdf"
     },
@@ -1157,5 +1175,5 @@
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     }
   ],
-  "last_updated": "2026-08-09T01:49:44.428958Z"
+  "last_updated": "2026-08-16T01:22:07.606631Z"
 }

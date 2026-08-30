@@ -13,17 +13,17 @@
   },
   "publications": [
     {
-      "title": "First functional prototype for the reconstruction of charged particle tracks using machine learning in the ATLAS experiment at the HL-LHC",
+      "title": "Accelerating GNN Inference for the GNN4ITk Pipeline in ATLAS",
       "authors": [
-        "Jan Stark",
         "Aleksandra Poreba",
         "Alexis Vallier",
         "Alina Lazar",
         "Benjamin Huth",
-        "C Collard",
+        "Christophe Collard",
         "Daniel Murnane",
         "Heberth Torres",
         "Jackson Carl Burzynski",
+        "Jan Stark",
         "Jared Dynes Burleson",
         "Jay Chan",
         "Levi Condren",
@@ -48,17 +48,17 @@
       "open_access_url": null
     },
     {
-      "title": "Accelerating GNN Inference for the GNN4ITk Pipeline in ATLAS",
+      "title": "First functional prototype for the reconstruction of charged particle tracks using machine learning in the ATLAS experiment at the HL-LHC",
       "authors": [
+        "Jan Stark",
         "Aleksandra Poreba",
         "Alexis Vallier",
         "Alina Lazar",
         "Benjamin Huth",
-        "Christophe Collard",
+        "C Collard",
         "Daniel Murnane",
         "Heberth Torres",
         "Jackson Carl Burzynski",
-        "Jan Stark",
         "Jared Dynes Burleson",
         "Jay Chan",
         "Levi Condren",
@@ -495,7 +495,7 @@
       "date": "2025-01-01",
       "doi": "https://doi.org/10.17181/cern.35ch.2o2p",
       "type": "article",
-      "cited_by_count": 7,
+      "cited_by_count": 8,
       "source": "Desy Publications Database (Deutsches Elektronen-Synchrotron DESY)",
       "open_access_url": "https://bib-pubdb1.desy.de/record/642166"
     },
@@ -655,8 +655,27 @@
         "X. Ju"
       ],
       "date": "2023-06-26",
-      "doi": "https://doi.org/10.5281/zenodo.8119763",
+      "doi": "https://doi.org/10.5281/zenodo.8119762",
       "type": "conference-paper",
+      "cited_by_count": 3,
+      "source": "HAL (Le Centre pour la Communication Scientifique Directe)",
+      "open_access_url": "https://doi.org/10.5281/zenodo.8119762"
+    },
+    {
+      "title": "CTD2022: ATLAS ITk Track Reconstruction with a GNN-based Pipeline",
+      "authors": [
+        "C. Rougier",
+        "A. Vallier",
+        "Daniel Murnane",
+        "Jan Stark",
+        "P. Calafiura",
+        "Steven Farrell",
+        "Sylvain Caillou",
+        "X. Ju"
+      ],
+      "date": "2023-06-26",
+      "doi": "https://doi.org/10.5281/zenodo.8119763",
+      "type": "conference-abstract",
       "cited_by_count": 0,
       "source": "Zenodo (CERN European Organization for Nuclear Research)",
       "open_access_url": "https://doi.org/10.5281/zenodo.8119763"
@@ -675,43 +694,10 @@
       ],
       "date": "2023-06-26",
       "doi": "https://doi.org/10.5281/zenodo.8187248",
-      "type": "conference-paper",
+      "type": "conference-abstract",
       "cited_by_count": 0,
       "source": "Zenodo (CERN European Organization for Nuclear Research)",
       "open_access_url": "https://doi.org/10.5281/zenodo.8187248"
-    },
-    {
-      "title": "CTD2022: ATLAS ITk Track Reconstruction with a GNN-based Pipeline",
-      "authors": [
-        "C. Rougier",
-        "A. Vallier",
-        "Daniel Murnane",
-        "Jan Stark",
-        "P. Calafiura",
-        "Steven Farrell",
-        "Sylvain Caillou",
-        "X. Ju"
-      ],
-      "date": "2023-06-26",
-      "doi": "https://doi.org/10.5281/zenodo.8119762",
-      "type": "conference-paper",
-      "cited_by_count": 3,
-      "source": "HAL (Le Centre pour la Communication Scientifique Directe)",
-      "open_access_url": "https://doi.org/10.5281/zenodo.8119762"
-    },
-    {
-      "title": "Semi-Equivariant GNN Architectures for Jet Tagging",
-      "authors": [
-        "Daniel Murnane",
-        "S. J. Thais",
-        "Jason W.H. Wong"
-      ],
-      "date": "2023-02-01",
-      "doi": "https://doi.org/10.1088/1742-6596/2438/1/012121",
-      "type": "conference-paper",
-      "cited_by_count": 5,
-      "source": "Journal of Physics Conference Series",
-      "open_access_url": "https://doi.org/10.1088/1742-6596/2438/1/012121"
     },
     {
       "title": "Graph Neural Network for Object Reconstruction in Liquid Argon Time Projection Chambers",
@@ -780,6 +766,20 @@
       "cited_by_count": 0,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012117/pdf"
+    },
+    {
+      "title": "Semi-Equivariant GNN Architectures for Jet Tagging",
+      "authors": [
+        "Daniel Murnane",
+        "S. J. Thais",
+        "Jason W.H. Wong"
+      ],
+      "date": "2023-02-01",
+      "doi": "https://doi.org/10.1088/1742-6596/2438/1/012121",
+      "type": "conference-paper",
+      "cited_by_count": 5,
+      "source": "Journal of Physics Conference Series",
+      "open_access_url": "https://doi.org/10.1088/1742-6596/2438/1/012121"
     },
     {
       "title": "Heterogeneous Graph Neural Network for Identifying Hadronically Decayed Tau Leptons at the High Luminosity LHC",
@@ -945,41 +945,6 @@
       "open_access_url": "https://link.springer.com/content/pdf/10.1007/JHEP05(2021)237.pdf"
     },
     {
-      "title": "Performance of a Geometric Deep Learning Pipeline for HL-LHC Particle Tracking",
-      "authors": [
-        "X. Ju",
-        "Daniel Murnane",
-        "P. Calafiura",
-        "Nicholas Choma",
-        "Sean Conlon",
-        "Steven Farrell",
-        "Yaoyuan Xu",
-        "M. Spiropulu",
-        "Jean-Roch Vlimant",
-        "A. Aurisano",
-        "Jeremy Hewes",
-        "G. B. Cerati",
-        "L. Gray",
-        "T. Klijnsma",
-        "Jim Kowalkowski",
-        "Markus Julian Atkinson",
-        "M. S. Neubauer",
-        "G. Dezoort",
-        "S. J. Thais",
-        "Aditi Chauhan",
-        "A. J. Schuy",
-        "S.\u2010C. Hsu",
-        "Alex Ballow",
-        "Lazar, and Alina"
-      ],
-      "date": "2021-03-11",
-      "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
-      "type": "preprint",
-      "cited_by_count": 76,
-      "source": "arXiv (Cornell University)",
-      "open_access_url": "https://arxiv.org/pdf/2103.06995"
-    },
-    {
       "title": "Physics and Computing Performance of the Exa.TrkX TrackML Pipeline.",
       "authors": [
         "X. Ju",
@@ -1015,16 +980,39 @@
       "open_access_url": "http://export.arxiv.org/pdf/2103.06995"
     },
     {
-      "title": "25th International Conference on Computing in High Energy & Nuclear Physics",
+      "title": "Performance of a Geometric Deep Learning Pipeline for HL-LHC Particle Tracking",
       "authors": [
-        "Daniel Murnane"
+        "X. Ju",
+        "Daniel Murnane",
+        "P. Calafiura",
+        "Nicholas Choma",
+        "Sean Conlon",
+        "Steven Farrell",
+        "Yaoyuan Xu",
+        "M. Spiropulu",
+        "Jean-Roch Vlimant",
+        "A. Aurisano",
+        "Jeremy Hewes",
+        "G. B. Cerati",
+        "L. Gray",
+        "T. Klijnsma",
+        "Jim Kowalkowski",
+        "Markus Julian Atkinson",
+        "M. S. Neubauer",
+        "G. Dezoort",
+        "S. J. Thais",
+        "Aditi Chauhan",
+        "A. J. Schuy",
+        "S.\u2010C. Hsu",
+        "Alex Ballow",
+        "Lazar, and Alina"
       ],
-      "date": "2021-01-01",
-      "doi": null,
-      "type": "article",
-      "cited_by_count": 0,
-      "source": "CERN Document Server (European Organization for Nuclear Research)",
-      "open_access_url": null
+      "date": "2021-03-11",
+      "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
+      "type": "preprint",
+      "cited_by_count": 76,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2103.06995"
     },
     {
       "title": "Graph Neural Network for Object Reconstruction in Liquid Argon Time Projection Chambers",
@@ -1053,6 +1041,18 @@
       "cited_by_count": 13,
       "source": "EPJ Web of Conferences",
       "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2021/05/epjconf_chep2021_03054.pdf"
+    },
+    {
+      "title": "25th International Conference on Computing in High Energy & Nuclear Physics",
+      "authors": [
+        "Daniel Murnane"
+      ],
+      "date": "2021-01-01",
+      "doi": null,
+      "type": "article",
+      "cited_by_count": 0,
+      "source": "CERN Document Server (European Organization for Nuclear Research)",
+      "open_access_url": null
     },
     {
       "title": "Track Seeding and Labelling with Embedded-space Graph Neural Networks",
@@ -1175,5 +1175,5 @@
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     }
   ],
-  "last_updated": "2026-08-23T01:23:57.761876Z"
+  "last_updated": "2026-08-30T04:11:42.062057Z"
 }

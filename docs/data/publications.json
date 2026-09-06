@@ -5,10 +5,10 @@
     "openalex_id": "A5011421008",
     "stats": {
       "works_count": 42,
-      "cited_by_count": 417,
+      "cited_by_count": 418,
       "h_index": 9,
       "i10_index": 8,
-      "2yr_mean_citedness": 5.928571428571429
+      "2yr_mean_citedness": 6.0
     }
   },
   "publications": [
@@ -1175,5 +1175,5 @@
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     }
   ],
-  "last_updated": "2026-08-30T04:11:42.062057Z"
+  "last_updated": "2026-09-06T03:25:59.767444Z"
 }

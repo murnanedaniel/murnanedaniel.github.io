@@ -8,7 +8,7 @@
       "cited_by_count": 418,
       "h_index": 9,
       "i10_index": 8,
-      "2yr_mean_citedness": 6.0
+      "2yr_mean_citedness": 6.071428571428571
     }
   },
   "publications": [
@@ -384,7 +384,7 @@
       "date": "2025-03-06",
       "doi": "https://doi.org/10.1140/epjc/s10052-024-13701-w",
       "type": "article",
-      "cited_by_count": 54,
+      "cited_by_count": 55,
       "source": "The European Physical Journal C",
       "open_access_url": "https://doi.org/10.1140/epjc/s10052-024-13701-w"
     },
@@ -494,10 +494,10 @@
       ],
       "date": "2025-01-01",
       "doi": "https://doi.org/10.17181/cern.35ch.2o2p",
-      "type": "article",
+      "type": "preprint",
       "cited_by_count": 8,
-      "source": "Desy Publications Database (Deutsches Elektronen-Synchrotron DESY)",
-      "open_access_url": "https://bib-pubdb1.desy.de/record/642166"
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2511.03883"
     },
     {
       "title": "Learning to Reconstruct Quirky Tracks",
@@ -1170,10 +1170,10 @@
       "date": "2017-11-01",
       "doi": "https://doi.org/10.1140/epjc/s10052-017-5285-8",
       "type": "article",
-      "cited_by_count": 93,
+      "cited_by_count": 92,
       "source": "The European Physical Journal C",
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     }
   ],
-  "last_updated": "2026-09-06T03:25:59.767444Z"
+  "last_updated": "2026-09-13T03:43:07.635026Z"
 }

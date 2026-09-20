@@ -5,10 +5,10 @@
     "openalex_id": "A5011421008",
     "stats": {
       "works_count": 42,
-      "cited_by_count": 418,
+      "cited_by_count": 416,
       "h_index": 9,
       "i10_index": 8,
-      "2yr_mean_citedness": 6.071428571428571
+      "2yr_mean_citedness": 6.142857142857143
     }
   },
   "publications": [
@@ -384,7 +384,7 @@
       "date": "2025-03-06",
       "doi": "https://doi.org/10.1140/epjc/s10052-024-13701-w",
       "type": "article",
-      "cited_by_count": 55,
+      "cited_by_count": 56,
       "source": "The European Physical Journal C",
       "open_access_url": "https://doi.org/10.1140/epjc/s10052-024-13701-w"
     },
@@ -851,7 +851,7 @@
       "date": "2022-03-23",
       "doi": "https://doi.org/10.48550/arxiv.2203.12852",
       "type": "preprint",
-      "cited_by_count": 16,
+      "cited_by_count": 15,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2203.12852"
     },
@@ -1010,7 +1010,7 @@
       "date": "2021-03-11",
       "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
       "type": "preprint",
-      "cited_by_count": 76,
+      "cited_by_count": 75,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2103.06995"
     },
@@ -1114,7 +1114,7 @@
       "date": "2020-03-25",
       "doi": "https://doi.org/10.48550/arxiv.2003.11603",
       "type": "preprint",
-      "cited_by_count": 86,
+      "cited_by_count": 85,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2003.11603"
     },
@@ -1170,10 +1170,10 @@
       "date": "2017-11-01",
       "doi": "https://doi.org/10.1140/epjc/s10052-017-5285-8",
       "type": "article",
-      "cited_by_count": 92,
+      "cited_by_count": 93,
       "source": "The European Physical Journal C",
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     }
   ],
-  "last_updated": "2026-09-13T03:43:07.635026Z"
+  "last_updated": "2026-09-20T03:53:31.986918Z"
 }

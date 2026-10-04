@@ -4,14 +4,94 @@
     "orcid": "0000-0003-4046-4822",
     "openalex_id": "A5011421008",
     "stats": {
-      "works_count": 45,
-      "cited_by_count": 424,
+      "works_count": 48,
+      "cited_by_count": 435,
       "h_index": 9,
-      "i10_index": 8,
-      "2yr_mean_citedness": 5.733333333333333
+      "i10_index": 9,
+      "2yr_mean_citedness": 4.421052631578948
     }
   },
   "publications": [
+    {
+      "title": "HEP4M tokenised COCOA single-jet dataset and model checkpoints",
+      "authors": [
+        "N. Kakati",
+        "Daniel Murnane",
+        "Hosein Hashemi",
+        "U. Klein",
+        "J. Krupa",
+        "Eilam Gross",
+        "L. Heinrich",
+        "M. Kagan"
+      ],
+      "date": "2026-09-28",
+      "doi": "https://doi.org/10.5281/zenodo.22917591",
+      "type": "preprint",
+      "cited_by_count": 0,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2609.31862"
+    },
+    {
+      "title": "HEP4M tokenised COCOA single-jet dataset and model checkpoints",
+      "authors": [
+        "N. Kakati",
+        "Daniel Murnane",
+        "Hosein Hashemi",
+        "U. Klein",
+        "J. Krupa",
+        "Eilam Gross",
+        "L. Heinrich",
+        "M. Kagan"
+      ],
+      "date": "2026-09-28",
+      "doi": "https://doi.org/10.5281/zenodo.22917590",
+      "type": "dataset",
+      "cited_by_count": 0,
+      "source": "Zenodo (CERN European Organization for Nuclear Research)",
+      "open_access_url": "https://doi.org/10.5281/zenodo.22917590"
+    },
+    {
+      "title": "Fast and Precise Learned Charged-Particle Trajectory Regression at the Large Hadron Collider",
+      "authors": [
+        "Jonathan Niklas Renusch",
+        "Benjamin Huth",
+        "Daniel Murnane",
+        "Eleni Xochelli",
+        "Doga Elitez",
+        "P. Gessinger-Befurt",
+        "Andreas Stefl",
+        "Jeremy Couthures",
+        "Andreas Salzburger",
+        "Lukas Heinrich",
+        "Michael Kagan",
+        "Markus Elsing"
+      ],
+      "date": "2026-09-26",
+      "doi": "https://doi.org/10.48550/arxiv.2609.32479",
+      "type": "preprint",
+      "cited_by_count": 0,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://arxiv.org/pdf/2609.32479"
+    },
+    {
+      "title": "Prompting Particle Physics: Tokenized Multi-modal Foundation Models for Combinatorially Many Tasks",
+      "authors": [
+        "Nilotpal Kakati",
+        "Daniel Murnane",
+        "Baran Hashemi",
+        "Samuel Klein",
+        "Jeffrey Krupa",
+        "Eilam Gross",
+        "Lukas Heinrich",
+        "Michael Kagan"
+      ],
+      "date": "2026-09-25",
+      "doi": "https://doi.org/10.48550/arxiv.2609.31862",
+      "type": "preprint",
+      "cited_by_count": 0,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://doi.org/10.48550/arxiv.2609.31862"
+    },
     {
       "title": "Accelerating GNN Inference for the GNN4ITk Pipeline in ATLAS",
       "authors": [
@@ -22,7 +102,7 @@
         "Christophe Collard",
         "Daniel Murnane",
         "Heberth Torres",
-        "Jackson Carl Burzynski",
+        "J. C. Burzynski",
         "Jan Stark",
         "Jared Dynes Burleson",
         "Jay Chan",
@@ -52,13 +132,13 @@
       "authors": [
         "Jan Stark",
         "Aleksandra Poreba",
-        "A. Vallier",
+        "Alexis Vallier",
         "Alina Lazar",
         "Benjamin Huth",
         "Caroline Collard",
         "Daniel Murnane",
         "Heberth Torres",
-        "Jackson Carl Burzynski",
+        "J. C. Burzynski",
         "Jared Dynes Burleson",
         "Jay Chan",
         "Levi Condren",
@@ -106,7 +186,7 @@
         "Ryan Liu",
         "P. Calafiura",
         "Steven Farrell",
-        "X. Ju",
+        "Xiangyang Ju",
         "Daniel Murnane",
         "Tuan Minh Pham"
       ],
@@ -127,14 +207,14 @@
       "date": "2026-04-01",
       "doi": "https://doi.org/10.1088/1742-6596/3206/1/012093",
       "type": "conference-paper",
-      "cited_by_count": 5,
+      "cited_by_count": 3,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://doi.org/10.1088/1742-6596/3206/1/012093"
     },
     {
       "title": "Building an AI-native Research Ecosystem for Experimental Particle Physics: A Community Vision",
       "authors": [
-        "Thea Klaeboe Aarrestad",
+        "T. K. Aarrestad",
         "Alaa Abdelhamid",
         "Haider Abidi",
         "J Adelman",
@@ -159,8 +239,8 @@
         "A. Bashyal",
         "Aashwin Basnet",
         "Ayse Bat",
-        "Lothar A. T. Bauerdick",
-        "John Beacom",
+        "L. A. T. Bauerdick",
+        "John Francis Beacom",
         "Chris Bee",
         "Michael Begel",
         "Matt Bellis",
@@ -168,14 +248,14 @@
         "R. Beminiwattha",
         "Gabriele Benelli",
         "Douglas Benjamin",
-        "Catrin Bernius",
+        "C. Bernius",
         "Binod Bhandari",
         "Avinay Bhat",
         "Meghna Bhattacharya",
         "Saptaparna Bhattacharya",
         "Prajita Bhattarai",
         "Sudip Bhattarai",
-        "Wahid Bhimji",
+        "W. Bhimji",
         "Jianming Bian",
         "Burak Bilki",
         "M. Bishai",
@@ -191,10 +271,10 @@
         "Gustaaf Brooijmans",
         "E. Brost",
         "M. B. Brunetti",
-        "Quentin Buat",
+        "Q. Buat",
         "Brendon Bullard",
         "Jackson Burzynski",
-        "Paolo Calafiura",
+        "P Calafiura",
         "Rodolfo Capdevilla",
         "Fabi\u00e1n Andr\u00e9s Casta\u00f1o",
         "R. Castillo Fern\u00e1ndez",
@@ -222,7 +302,7 @@
         "Kyle Cranmer",
         "Matteo Cremonesi",
         "Roy Cruz",
-        "Mate Csanad",
+        "M. Csan\u00e1d",
         "Mariarosaria D'Alfonso",
         "Carlo Dallapiccola",
         "Daine L. Danielson",
@@ -233,7 +313,7 @@
         "K. Dehmelt",
         "M. Del Tutto",
         "Carlos Ruben Dell'Aquila",
-        "Sarah Demers"
+        "S. Demers"
       ],
       "date": "2026-02-19",
       "doi": "https://doi.org/10.48550/arxiv.2602.17582",
@@ -252,14 +332,14 @@
         "Christophe Collard",
         "Daniel Murnane",
         "Heberth Torres",
-        "Jackson Carl Burzynski",
+        "J. C. Burzynski",
         "Jan Stark",
         "Jared Dynes Burleson",
         "Jay Chan",
         "Levi Condren",
-        "Mark Neubauer",
+        "Mark S. Neubauer",
         "Miles Cochran-Branson",
-        "Minh Nhat Hung Pham",
+        "Pham, Minh Tuan",
         "P Calafiura",
         "Pierfrancesco Butti",
         "Prachi Atmasiddha",
@@ -291,9 +371,9 @@
         "H. Abramowicz",
         "H. Abreu",
         "Y. Abulaiti",
-        "El\u00edas Trenard Garc\u00eda",
+        "E. Accion Garcia",
         "B. S. Acharya",
-        "V. Ac\u00edn Portella",
+        "V Ac\u00edn",
         "Anke Ackermann",
         "Carles Acosta\u2010Silva",
         "C. Adam Bourdarios",
@@ -369,7 +449,7 @@
         "Kyle Amirie",
         "S. P. Amor Dos Santos",
         "K. R. Amos",
-        "Su Jung An",
+        "S. An",
         "V. Ananiev",
         "C. Anastopoulos",
         "T. Andeen",
@@ -402,9 +482,9 @@
         "H. Abramowicz",
         "H. Abreu",
         "Y. Abulaiti",
-        "El\u00edas Trenard Garc\u00eda",
+        "E. Accion Garcia",
         "B. S. Acharya",
-        "V. Ac\u00edn Portella",
+        "V Ac\u00edn",
         "Anke Ackermann",
         "Carles Acosta\u2010Silva",
         "C. Adam Bourdarios",
@@ -519,7 +599,7 @@
         "D. d\u2019Enterria",
         "Antoine G\u00e9rardin",
         "V. M. Sarti",
-        "Sven-Olaf Moch",
+        "S. Moch",
         "Marco Pappagallo",
         "R. J. M. Snellings",
         "Urs Achim Wiedemann",
@@ -535,7 +615,7 @@
         "P. Koppenburg",
         "Radoslav Ivanov Marchevski",
         "Angela Papa",
-        "Guillaume Pignol",
+        "G. Pignol",
         "J. Serrano",
         "Pilar Hern\u00e1ndez",
         "S. Bolognesi",
@@ -548,7 +628,7 @@
         "Aldo Ianni",
         "Joachim Kopp",
         "Elisa Resconi",
-        "Mark A. Scott",
+        "M. Scott",
         "V. Sordini",
         "Fabio Maltoni",
         "R. Gonzalez Suarez",
@@ -560,7 +640,7 @@
         "L. Gouskos",
         "Juste, Aurelio",
         "Sophie Renner",
-        "L. Shchutska",
+        "Lesya SHCHUTSKA",
         "J. Monroe",
         "Matthew McCullough",
         "Yohei Ema",
@@ -580,7 +660,7 @@
         "D. Angal-Kalinin",
         "Bernhard Auchmann",
         "M. Ferrario",
-        "Angeles Faus Golfe",
+        "A. Faus\u2010Golfe",
         "R. Losito",
         "A.-S. Mueller",
         "Tor O. Raubenheimer",
@@ -589,19 +669,19 @@
         "Hans P. Weise",
         "Walter Wuensch",
         "C. X. Yu",
-        "Thomas Bergauer",
+        "T. Bergauer",
         "U. Husemann",
-        "Dorothea vom Bruch",
+        "Dorothea Vom Bruch",
         "T. K. Aarrestad",
         "D. Bortoletto",
         "S. Bressler",
         "M. Demarteau",
         "M. Doser",
-        "Gabriella Gaudio",
+        "G. Gaudio",
         "In\u00e9s Gil-Botella",
         "Andrea Giuliani",
         "F. Palla",
-        "Rok Pestotnik"
+        "R. Pestotnik"
       ],
       "date": "2025-01-01",
       "doi": "https://doi.org/10.17181/cern.35ch.2o2p",
@@ -636,8 +716,8 @@
         "P. Calafiura",
         "Alina Lazar",
         "Daniel Murnane",
-        "Minhtuan Pham",
-        "X. Ju"
+        "Pham, Minh-Tuan",
+        "Xiangyang Ju"
       ],
       "date": "2024-02-14",
       "doi": "https://doi.org/10.48550/arxiv.2402.10239",
@@ -651,7 +731,7 @@
       "authors": [
         "Sylvain Caillou",
         "P. Calafiura",
-        "X. Ju",
+        "Xiangyang Ju",
         "Daniel Murnane",
         "Tuan Q. Pham",
         "Charline Rougier",
@@ -715,7 +795,7 @@
         "R.J. Cooper",
         "R. Heller",
         "Daniel Murnane",
-        "Benjamin Nachman"
+        "Benjamin Philip Nachman"
       ],
       "date": "2023-11-04",
       "doi": "https://doi.org/10.1109/nssmicrtsd49126.2023.10338219",
@@ -740,7 +820,7 @@
       "title": "Heterogeneous Graph Neural Network for identifying hadronically decayed tau leptons at the High Luminosity LHC",
       "authors": [
         "Andris Huang",
-        "X. Ju",
+        "Xiangyang Ju",
         "Jacob Lyons",
         "Daniel Murnane",
         "Mariel Pettee",
@@ -763,7 +843,7 @@
         "P. Calafiura",
         "Steven Farrell",
         "Sylvain Caillou",
-        "X. Ju"
+        "Xiangyang Ju"
       ],
       "date": "2023-06-26",
       "doi": "https://doi.org/10.5281/zenodo.8119762",
@@ -782,7 +862,7 @@
         "P. Calafiura",
         "Steven Farrell",
         "Sylvain Caillou",
-        "X. Ju"
+        "Xiangyang Ju"
       ],
       "date": "2023-06-26",
       "doi": "https://doi.org/10.5281/zenodo.8119763",
@@ -801,7 +881,7 @@
         "P. Calafiura",
         "Steven Farrell",
         "Sylvain Caillou",
-        "X. Ju"
+        "Xiangyang Ju"
       ],
       "date": "2023-06-26",
       "doi": "https://doi.org/10.5281/zenodo.8187248",
@@ -816,23 +896,23 @@
         "K. Gumpula",
         "N Koloskov",
         "Daniel Grzenda",
-        "V Hewes",
+        "V. Hewes",
         "Adam Aurisano",
         "G. B. Cerati",
-        "Alexander A. Day",
+        "A Day",
         "Jim Kowalkowski",
         "C. Lee",
         "K. Wang",
         "Wei\u2010keng Liao",
         "M. Spiropulu",
-        "Ankit Kumar Agrawal",
+        "Ankit Agrawal",
         "J. R. Vlimant",
         "L. Gray",
         "T. Klijnsma",
         "P Calafiura",
         "Sean Conlon",
         "Steven Farrell",
-        "X. Ju",
+        "Xiangyang Ju",
         "Daniel Murnane"
       ],
       "date": "2023-02-01",
@@ -843,15 +923,50 @@
       "open_access_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012091/pdf"
     },
     {
+      "title": "Accelerating the Inference of the Exa.TrkX Pipeline",
+      "authors": [
+        "Alina Lazar",
+        "Xiangyang Ju",
+        "Daniel Murnane",
+        "Paolo Calafiura",
+        "Steven Farrell",
+        "Yaoyuan Xu",
+        "Maria Spiropulu",
+        "Jean-Roch Vlimant",
+        "Giuseppe Cerati",
+        "Lindsey Gray",
+        "Thomas Klijnsma",
+        "Jim Kowalkowski",
+        "Markus Atkinson",
+        "Mark Neubauer",
+        "Gage DeZoort",
+        "Savannah Thais",
+        "Shih-Chieh Hsu",
+        "Adam Aurisano",
+        "Jeremy Hewes",
+        "Alexandra Ballow",
+        "Nirajan Acharya",
+        "Chun-yi Wang",
+        "Emma Liu",
+        "Alberto Lucas"
+      ],
+      "date": "2023-02-01",
+      "doi": "https://doi.org/10.1088/1742-6596/2438/1/012008",
+      "type": "conference-paper",
+      "cited_by_count": 15,
+      "source": "Journal of Physics Conference Series",
+      "open_access_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012008/pdf"
+    },
+    {
       "title": "Reconstruction of Large Radius Tracks with the Exa.TrkX pipeline",
       "authors": [
         "Chunyi Wang",
-        "X. Ju",
+        "Xiangyang Ju",
         "S.\u2010C. Hsu",
         "Daniel Murnane",
         "P. Calafiura",
         "Steven Farrell",
-        "Maria Spiropulu",
+        "M. Spiropulu",
         "Jean-Roch Vlimant",
         "Adam Aurisano",
         "Jeremy Hewes",
@@ -883,7 +998,7 @@
       "authors": [
         "Daniel Murnane",
         "S. J. Thais",
-        "Jason W.H. Wong"
+        "Jason Wong"
       ],
       "date": "2023-02-01",
       "doi": "https://doi.org/10.1088/1742-6596/2438/1/012121",
@@ -893,29 +1008,12 @@
       "open_access_url": "https://doi.org/10.1088/1742-6596/2438/1/012121"
     },
     {
-      "title": "Heterogeneous Graph Neural Network for Identifying Hadronically Decayed Tau Leptons at the High Luminosity LHC",
-      "authors": [
-        "Andris Huang",
-        "X. Ju",
-        "Jacob Lyons",
-        "Daniel Murnane",
-        "Mariel Pettee",
-        "Landon Reed"
-      ],
-      "date": "2023-01-02",
-      "doi": "https://doi.org/10.48550/arxiv.2301.00501",
-      "type": "preprint",
-      "cited_by_count": 0,
-      "source": "arXiv (Cornell University)",
-      "open_access_url": "https://arxiv.org/pdf/2301.00501"
-    },
-    {
       "title": "Applying and optimizing the Exa.TrkX Pipeline on the OpenDataDetector with ACTS",
       "authors": [
         "Benjamin Huth",
         "P. Calafiura",
         "L. Heinrich",
-        "X. Ju",
+        "Xiangyang Ju",
         "Alina Lazar",
         "Daniel Murnane",
         "Andreas Salzburger",
@@ -962,7 +1060,7 @@
       "date": "2022-03-23",
       "doi": "https://doi.org/10.48550/arxiv.2203.12852",
       "type": "preprint",
-      "cited_by_count": 15,
+      "cited_by_count": 14,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2203.12852"
     },
@@ -973,7 +1071,7 @@
         "S. Ganguly",
         "Thomas Kipf",
         "Risi Kondor",
-        "David W. Miller",
+        "Miller, David W.",
         "Daniel Murnane",
         "Jan T. Offermann",
         "Mariel Pettee",
@@ -989,23 +1087,9 @@
       "open_access_url": "https://arxiv.org/pdf/2203.06153"
     },
     {
-      "title": "Semi-Equivariant GNN Architectures for Jet Tagging",
-      "authors": [
-        "Daniel Murnane",
-        "S. J. Thais",
-        "Jason W.H. Wong"
-      ],
-      "date": "2022-02-14",
-      "doi": "https://doi.org/10.48550/arxiv.2202.06941",
-      "type": "preprint",
-      "cited_by_count": 0,
-      "source": "arXiv (Cornell University)",
-      "open_access_url": "https://arxiv.org/pdf/2202.06941"
-    },
-    {
       "title": "Performance of a geometric deep learning pipeline for HL-LHC particle tracking",
       "authors": [
-        "X. Ju",
+        "Xiangyang Ju",
         "Daniel Murnane",
         "P. Calafiura",
         "Nicholas Choma",
@@ -1027,7 +1111,7 @@
         "Aditi Chauhan",
         "A. J. Schuy",
         "S.\u2010C. Hsu",
-        "Alex Ballow",
+        "Alexandra Ballow",
         "Alina Lazar"
       ],
       "date": "2021-10-01",
@@ -1058,7 +1142,7 @@
     {
       "title": "Physics and Computing Performance of the Exa.TrkX TrackML Pipeline.",
       "authors": [
-        "X. Ju",
+        "Xiangyang Ju",
         "Daniel Murnane",
         "P. Calafiura",
         "Nicholas Choma",
@@ -1093,7 +1177,7 @@
     {
       "title": "Performance of a Geometric Deep Learning Pipeline for HL-LHC Particle Tracking",
       "authors": [
-        "X. Ju",
+        "Xiangyang Ju",
         "Daniel Murnane",
         "P. Calafiura",
         "Nicholas Choma",
@@ -1115,13 +1199,13 @@
         "Aditi Chauhan",
         "A. J. Schuy",
         "S.\u2010C. Hsu",
-        "Alex Ballow",
+        "Alexandra Ballow",
         "Lazar, and Alina"
       ],
       "date": "2021-03-11",
       "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
       "type": "preprint",
-      "cited_by_count": 75,
+      "cited_by_count": 76,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2103.06995"
     },
@@ -1135,7 +1219,7 @@
         "Claire Lee",
         "Wei\u2010keng Liao",
         "Alexandra L. Day",
-        "Ankit Kumar Agrawal",
+        "Ankit Agrawal",
         "M. Spiropulu",
         "Jean-Roch Vlimant",
         "L. Gray",
@@ -1143,7 +1227,7 @@
         "P. Calafiura",
         "Sean Conlon",
         "Steve Farrell",
-        "X. Ju",
+        "Xiangyang Ju",
         "Daniel Murnane"
       ],
       "date": "2021-01-01",
@@ -1170,7 +1254,7 @@
       "authors": [
         "Nicholas Choma",
         "Daniel Murnane",
-        "X. Ju",
+        "Xiangyang Ju",
         "P. Calafiura",
         "Sean Conlon",
         "Steven Farrell",
@@ -1198,7 +1282,7 @@
     {
       "title": "Graph Neural Networks for Particle Reconstruction in High Energy Physics detectors",
       "authors": [
-        "X. Ju",
+        "Xiangyang Ju",
         "Steven Farrell",
         "P. Calafiura",
         "Daniel Murnane",
@@ -1225,7 +1309,7 @@
       "date": "2020-03-25",
       "doi": "https://doi.org/10.48550/arxiv.2003.11603",
       "type": "preprint",
-      "cited_by_count": 86,
+      "cited_by_count": 83,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2003.11603"
     },
@@ -1281,7 +1365,7 @@
       "date": "2017-11-01",
       "doi": "https://doi.org/10.1140/epjc/s10052-017-5285-8",
       "type": "article",
-      "cited_by_count": 95,
+      "cited_by_count": 94,
       "source": "The European Physical Journal C",
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     },
@@ -1310,5 +1394,5 @@
       "open_access_url": "https://doi.org/10.25909/5526892.v1"
     }
   ],
-  "last_updated": "2026-09-27T04:11:41.168077Z"
+  "last_updated": "2026-10-04T04:47:13.054388Z"
 }

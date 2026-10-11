@@ -4,11 +4,11 @@
     "orcid": "0000-0003-4046-4822",
     "openalex_id": "A5011421008",
     "stats": {
-      "works_count": 48,
-      "cited_by_count": 435,
+      "works_count": 44,
+      "cited_by_count": 425,
       "h_index": 9,
       "i10_index": 9,
-      "2yr_mean_citedness": 4.421052631578948
+      "2yr_mean_citedness": 4.611111111111111
     }
   },
   "publications": [
@@ -25,30 +25,11 @@
         "M. Kagan"
       ],
       "date": "2026-09-28",
-      "doi": "https://doi.org/10.5281/zenodo.22917591",
+      "doi": "https://doi.org/10.5281/zenodo.22917590",
       "type": "preprint",
       "cited_by_count": 0,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2609.31862"
-    },
-    {
-      "title": "HEP4M tokenised COCOA single-jet dataset and model checkpoints",
-      "authors": [
-        "N. Kakati",
-        "Daniel Murnane",
-        "Hosein Hashemi",
-        "U. Klein",
-        "J. Krupa",
-        "Eilam Gross",
-        "L. Heinrich",
-        "M. Kagan"
-      ],
-      "date": "2026-09-28",
-      "doi": "https://doi.org/10.5281/zenodo.22917590",
-      "type": "dataset",
-      "cited_by_count": 0,
-      "source": "Zenodo (CERN European Organization for Nuclear Research)",
-      "open_access_url": "https://doi.org/10.5281/zenodo.22917590"
     },
     {
       "title": "Fast and Precise Learned Charged-Particle Trajectory Regression at the Large Hadron Collider",
@@ -109,8 +90,8 @@
         "Levi Condren",
         "Mark Neubauer",
         "Miles Cochran-Branson",
-        "Minh Tuan Pham",
-        "P Calafiura",
+        "T. M. Pham",
+        "P. Calafiura",
         "P. Butti",
         "Prachi Atmasiddha",
         "Santosh Parajuli",
@@ -140,12 +121,12 @@
         "Heberth Torres",
         "J. C. Burzynski",
         "Jared Dynes Burleson",
-        "Jay Chan",
+        "J. Chan",
         "Levi Condren",
         "Mark S. Neubauer",
         "Miles Cochran-Branson",
-        "M Pham",
-        "P Calafiura",
+        "T. M. Pham",
+        "P. Calafiura",
         "P. Butti",
         "Prachi Atmasiddha",
         "Santosh Parajuli",
@@ -193,7 +174,7 @@
       "date": "2026-04-01",
       "doi": "https://doi.org/10.1088/1742-6596/3206/1/012084",
       "type": "conference-paper",
-      "cited_by_count": 4,
+      "cited_by_count": 3,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://doi.org/10.1088/1742-6596/3206/1/012084"
     },
@@ -274,7 +255,7 @@
         "Q. Buat",
         "Brendon Bullard",
         "Jackson Burzynski",
-        "P Calafiura",
+        "P. Calafiura",
         "Rodolfo Capdevilla",
         "Fabi\u00e1n Andr\u00e9s Casta\u00f1o",
         "R. Castillo Fern\u00e1ndez",
@@ -299,7 +280,7 @@
         "Wonyong Chung",
         "Rafael Coelho Lopes De Sa",
         "S. Corrodi",
-        "Kyle Cranmer",
+        "Kyle Stuart Cranmer",
         "Matteo Cremonesi",
         "Roy Cruz",
         "M. Csan\u00e1d",
@@ -335,12 +316,12 @@
         "J. C. Burzynski",
         "Jan Stark",
         "Jared Dynes Burleson",
-        "Jay Chan",
+        "J. Chan",
         "Levi Condren",
         "Mark S. Neubauer",
         "Miles Cochran-Branson",
         "Pham, Minh Tuan",
-        "P Calafiura",
+        "P. Calafiura",
         "Pierfrancesco Butti",
         "Prachi Atmasiddha",
         "Santosh Parajuli",
@@ -691,24 +672,6 @@
       "open_access_url": "https://arxiv.org/pdf/2511.03883"
     },
     {
-      "title": "Learning to Reconstruct Quirky Tracks",
-      "authors": [
-        "Q. Sha",
-        "Daniel Murnane",
-        "Max Fieg",
-        "Shelley Tong",
-        "Mark Zakharyan",
-        "Yaquan Fang",
-        "Daniel Whiteson"
-      ],
-      "date": "2024-09-30",
-      "doi": "https://doi.org/10.48550/arxiv.2410.00269",
-      "type": "preprint",
-      "cited_by_count": 0,
-      "source": "arXiv (Cornell University)",
-      "open_access_url": "https://arxiv.org/pdf/2410.00269"
-    },
-    {
       "title": "A Language Model for Particle Tracking",
       "authors": [
         "Andris Huang",
@@ -733,7 +696,7 @@
         "P. Calafiura",
         "Xiangyang Ju",
         "Daniel Murnane",
-        "Tuan Q. Pham",
+        "T. M. Pham",
         "Charline Rougier",
         "Jan Stark",
         "Alexis Vallier"
@@ -829,7 +792,7 @@
       "date": "2023-07-01",
       "doi": "https://doi.org/10.1088/1748-0221/18/07/p07001",
       "type": "article",
-      "cited_by_count": 9,
+      "cited_by_count": 8,
       "source": "Journal of Instrumentation",
       "open_access_url": "https://iopscience.iop.org/article/10.1088/1748-0221/18/07/P07001/pdf"
     },
@@ -853,44 +816,6 @@
       "open_access_url": "https://doi.org/10.5281/zenodo.8119762"
     },
     {
-      "title": "CTD2022: ATLAS ITk Track Reconstruction with a GNN-based Pipeline",
-      "authors": [
-        "Charline Rougier",
-        "Alexis Vallier",
-        "Daniel Murnane",
-        "Jan Stark",
-        "P. Calafiura",
-        "Steven Farrell",
-        "Sylvain Caillou",
-        "Xiangyang Ju"
-      ],
-      "date": "2023-06-26",
-      "doi": "https://doi.org/10.5281/zenodo.8119763",
-      "type": "conference-abstract",
-      "cited_by_count": 0,
-      "source": "Zenodo (CERN European Organization for Nuclear Research)",
-      "open_access_url": "https://doi.org/10.5281/zenodo.8119763"
-    },
-    {
-      "title": "CTD2022: ATLAS ITk Track Reconstruction with a GNN-based Pipeline",
-      "authors": [
-        "Charline Rougier",
-        "Alexis Vallier",
-        "Daniel Murnane",
-        "Jan Stark",
-        "P. Calafiura",
-        "Steven Farrell",
-        "Sylvain Caillou",
-        "Xiangyang Ju"
-      ],
-      "date": "2023-06-26",
-      "doi": "https://doi.org/10.5281/zenodo.8187248",
-      "type": "conference-abstract",
-      "cited_by_count": 0,
-      "source": "Zenodo (CERN European Organization for Nuclear Research)",
-      "open_access_url": "https://doi.org/10.5281/zenodo.8187248"
-    },
-    {
       "title": "Graph Neural Network for Object Reconstruction in Liquid Argon Time Projection Chambers",
       "authors": [
         "K. Gumpula",
@@ -906,10 +831,10 @@
         "Wei\u2010keng Liao",
         "M. Spiropulu",
         "Ankit Agrawal",
-        "J. R. Vlimant",
+        "Jean-Roch Vlimant",
         "L. Gray",
         "T. Klijnsma",
-        "P Calafiura",
+        "P. Calafiura",
         "Sean Conlon",
         "Steven Farrell",
         "Xiangyang Ju",
@@ -928,7 +853,7 @@
         "Alina Lazar",
         "Xiangyang Ju",
         "Daniel Murnane",
-        "Paolo Calafiura",
+        "P. Calafiura",
         "Steven Farrell",
         "Yaoyuan Xu",
         "Maria Spiropulu",
@@ -953,7 +878,7 @@
       "date": "2023-02-01",
       "doi": "https://doi.org/10.1088/1742-6596/2438/1/012008",
       "type": "conference-paper",
-      "cited_by_count": 15,
+      "cited_by_count": 14,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012008/pdf"
     },
@@ -1003,7 +928,7 @@
       "date": "2023-02-01",
       "doi": "https://doi.org/10.1088/1742-6596/2438/1/012121",
       "type": "conference-paper",
-      "cited_by_count": 5,
+      "cited_by_count": 4,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://doi.org/10.1088/1742-6596/2438/1/012121"
     },
@@ -1023,7 +948,7 @@
       "doi": "https://doi.org/10.22323/1.414.0227",
       "type": "conference-paper",
       "cited_by_count": 0,
-      "source": "Proceedings of 41st International Conference on High Energy physics \u2014 PoS(ICHEP2022)",
+      "source": "International Conference on High Energy Physics (ICHEP)",
       "open_access_url": "https://pos.sissa.it/414/227/pdf"
     },
     {
@@ -1060,7 +985,7 @@
       "date": "2022-03-23",
       "doi": "https://doi.org/10.48550/arxiv.2203.12852",
       "type": "preprint",
-      "cited_by_count": 14,
+      "cited_by_count": 13,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2203.12852"
     },
@@ -1205,7 +1130,7 @@
       "date": "2021-03-11",
       "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
       "type": "preprint",
-      "cited_by_count": 76,
+      "cited_by_count": 74,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2103.06995"
     },
@@ -1309,7 +1234,7 @@
       "date": "2020-03-25",
       "doi": "https://doi.org/10.48550/arxiv.2003.11603",
       "type": "preprint",
-      "cited_by_count": 83,
+      "cited_by_count": 80,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2003.11603"
     },
@@ -1380,19 +1305,7 @@
       "cited_by_count": 0,
       "source": "The University of Adelaide",
       "open_access_url": "https://doi.org/10.25909/5526892"
-    },
-    {
-      "title": "Fine Tuning in Composite Higgs Models.pptx",
-      "authors": [
-        "Daniel Murnane"
-      ],
-      "date": "2017-10-23",
-      "doi": "https://doi.org/10.25909/5526892.v1",
-      "type": "article",
-      "cited_by_count": 0,
-      "source": "The University of Adelaide",
-      "open_access_url": "https://doi.org/10.25909/5526892.v1"
     }
   ],
-  "last_updated": "2026-10-04T04:47:13.054388Z"
+  "last_updated": "2026-10-11T04:35:05.113196Z"
 }

@@ -832,7 +832,7 @@
       "type": "conference-paper",
       "cited_by_count": 5,
       "source": "HAL (Le Centre pour la Communication Scientifique Directe)",
-      "open_access_url": "https://doi.org/10.5281/zenodo.8119762"
+      "open_access_url": "https://hal.science/hal-03793565"
     },
     {
       "title": "Graph Neural Network for Object Reconstruction in Liquid Argon Time Projection Chambers",
@@ -1326,5 +1326,5 @@
       "open_access_url": "https://doi.org/10.25909/5526892"
     }
   ],
-  "last_updated": "2026-10-18T03:30:18.200166Z"
+  "last_updated": "2026-10-25T03:38:55.231363Z"
 }

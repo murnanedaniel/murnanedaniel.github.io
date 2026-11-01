@@ -4,14 +4,39 @@
     "orcid": "0000-0003-4046-4822",
     "openalex_id": "A5011421008",
     "stats": {
-      "works_count": 59,
-      "cited_by_count": 460,
+      "works_count": 61,
+      "cited_by_count": 462,
       "h_index": 10,
       "i10_index": 10,
-      "2yr_mean_citedness": 3.5416666666666665
+      "2yr_mean_citedness": 3.12
     }
   },
   "publications": [
+    {
+      "title": "chATLAS: A Retrieval-Augmented Conversational Assistant for the ATLAS Experiment",
+      "authors": [
+        "Joe Egan",
+        "Ben Elliot",
+        "Samuel Van Stroud",
+        "Alex Sopio",
+        "Ki Ryeong Park",
+        "Daniele Dal Santo",
+        "Zhaohui Li",
+        "Runze Li",
+        "Jeremy Couthures",
+        "Joe George",
+        "Cary Randazzo",
+        "Juerg Beringer",
+        "Daniel Murnane",
+        "G. Facini"
+      ],
+      "date": "2026-10-24",
+      "doi": "https://doi.org/10.48550/arxiv.2610.37697",
+      "type": "preprint",
+      "cited_by_count": 0,
+      "source": "arXiv (Cornell University)",
+      "open_access_url": "https://doi.org/10.48550/arxiv.2610.37697"
+    },
     {
       "title": "Precision Tokenization for Multi-Modal Data in High Energy Physics",
       "authors": [
@@ -37,18 +62,18 @@
         "N. Kakati",
         "Daniel Murnane",
         "Hosein Hashemi",
-        "S. B. Klein",
-        "J. Krupa",
-        "Eilam Gross",
+        "U. Klein",
+        "O. Kuchinskaia",
+        "J. Gro\u00dfe-Knetter",
         "L. Heinrich",
-        "M. Kagan"
+        "H. Kagan"
       ],
       "date": "2026-09-28",
       "doi": "https://doi.org/10.5281/zenodo.22917590",
-      "type": "preprint",
+      "type": "dataset",
       "cited_by_count": 0,
-      "source": "arXiv (Cornell University)",
-      "open_access_url": "https://arxiv.org/pdf/2609.31862"
+      "source": "Zenodo (CERN European Organization for Nuclear Research)",
+      "open_access_url": "https://doi.org/10.5281/zenodo.22917590"
     },
     {
       "title": "Fast and Precise Learned Charged-Particle Trajectory Regression at the Large Hadron Collider",
@@ -76,9 +101,9 @@
     {
       "title": "Prompting Particle Physics: Tokenized Multi-modal Foundation Models for Combinatorially Many Tasks",
       "authors": [
-        "Nilotpal Kakati",
+        "N. Kakati",
         "Daniel Murnane",
-        "Baran Hashemi",
+        "Hosein Hashemi",
         "S. B. Klein",
         "J. Krupa",
         "Eilam Gross",
@@ -90,7 +115,7 @@
       "type": "preprint",
       "cited_by_count": 0,
       "source": "arXiv (Cornell University)",
-      "open_access_url": "https://doi.org/10.48550/arxiv.2609.31862"
+      "open_access_url": "https://arxiv.org/pdf/2609.31862"
     },
     {
       "title": "Accelerating GNN Inference for the GNN4ITk Pipeline in ATLAS",
@@ -176,7 +201,7 @@
       "date": "2026-06-09",
       "doi": "https://doi.org/10.1103/dvzc-lgj1",
       "type": "article",
-      "cited_by_count": 0,
+      "cited_by_count": 1,
       "source": "Physical review. D/Physical review. D.",
       "open_access_url": "https://doi.org/10.1103/dvzc-lgj1"
     },
@@ -319,8 +344,20 @@
       "doi": "https://doi.org/10.48550/arxiv.2602.17582",
       "type": "preprint",
       "cited_by_count": 0,
-      "source": "HAL (Le Centre pour la Communication Scientifique Directe)",
+      "source": "HAL",
       "open_access_url": "http://arxiv.org/pdf/2602.17582"
+    },
+    {
+      "title": "Collider 2031: A platform and fiction for exploring future technologies in collider physics",
+      "authors": [
+        "Daniel Murnane"
+      ],
+      "date": "2025-10-22",
+      "doi": "https://doi.org/10.5281/zenodo.17578820",
+      "type": "software",
+      "cited_by_count": 0,
+      "source": "Zenodo (CERN European Organization for Nuclear Research)",
+      "open_access_url": "https://doi.org/10.5281/zenodo.17578820"
     },
     {
       "title": "Developments of GNN Track Reconstruction for the ATLAS ITk Detector",
@@ -580,117 +617,6 @@
       "open_access_url": "https://doi.org/10.1140/epjc/s10052-024-13701-w"
     },
     {
-      "title": "Physics Briefing Book: Input for the 2026 update of the European Strategy for Particle Physics",
-      "authors": [
-        "Jorge de Blas",
-        "M. Dunford",
-        "Emanuele Bagnaschi",
-        "Ayres Freitas",
-        "Pier Paolo Giardino",
-        "Christian Grefe",
-        "M. Selvaggi",
-        "Angela Taliercio",
-        "A. Dainese",
-        "CRISTINEL DIACONU",
-        "Chiara Signorile-Signorile",
-        "N. Armesto",
-        "R. Arnaldi",
-        "A. G. Buckley",
-        "D. d\u2019Enterria",
-        "Antoine G\u00e9rardin",
-        "V. M. Sarti",
-        "S. Moch",
-        "Marco Pappagallo",
-        "R. J. M. Snellings",
-        "Urs Achim Wiedemann",
-        "Gino Isidori",
-        "Marie-H\u00e9l\u00e8ne Schune",
-        "Piscopo, Maria Laura",
-        "M. Calvi",
-        "Yuval Grossman",
-        "T. Humair",
-        "Andreas J\u00fcttner",
-        "Jernej F. Kamenik",
-        "M. Kenzie",
-        "P. Koppenburg",
-        "Radoslav Ivanov Marchevski",
-        "Angela Papa",
-        "G. Pignol",
-        "J. Serrano",
-        "Pilar Hern\u00e1ndez",
-        "S. Bolognesi",
-        "Ivan Esteban",
-        "S. Dolan",
-        "Valerie Domcke",
-        "Joseph A. Formaggio",
-        "M. C. Gonz\u00e1lez-Garc\u00eda",
-        "A. Heijboer",
-        "Aldo Ianni",
-        "Joachim Kopp",
-        "Elisa Resconi",
-        "M. Scott",
-        "V. Sordini",
-        "Fabio Maltoni B",
-        "R. Gonzalez Suarez",
-        "Benedikt Maier",
-        "Timothy Cohen A",
-        "Annapaola De Cosa",
-        "Nathaniel J. Craig",
-        "Roberto Franceschini A",
-        "L. Gouskos",
-        "A. Juste Rozas",
-        "Sophie Renner",
-        "Lesya SHCHUTSKA",
-        "Jocelyn Rebecca Monroe",
-        "Matthew Philip Mccullough",
-        "Yohei Ema",
-        "P. Agnes",
-        "Francesca Calore",
-        "Emanuele Castorina",
-        "Aaron S. Chou",
-        "M. D\u2019Onofrio",
-        "Maksym Ovchynnikov",
-        "T. R. Pollmann",
-        "Josef Pradler",
-        "Yotam Soreq",
-        "Julia K. Vogel",
-        "G. Arduini",
-        "Philip Nicholas Burrows",
-        "Jacqueline Keintzel",
-        "D. Angal-Kalinin",
-        "Bernhard Auchmann",
-        "M. Ferrario",
-        "A. Faus\u2010Golfe",
-        "R. Losito",
-        "A.-S. Mueller",
-        "Tor O. Raubenheimer",
-        "M. Turner",
-        "P. V\u00e9drine",
-        "Hans P. Weise",
-        "Walter Wuensch",
-        "C. X. Yu",
-        "T. Bergauer",
-        "U. Husemann",
-        "Dorothea Vom Bruch",
-        "T. K. Aarrestad",
-        "D. Bortoletto",
-        "S. Bressler",
-        "M. Demarteau",
-        "M. Doser",
-        "G. Gaudio",
-        "In\u00e9s Gil-Botella",
-        "Andrea Giuliani",
-        "F. Palla",
-        "R. Pestotnik"
-      ],
-      "date": "2025-01-01",
-      "doi": "https://doi.org/10.17181/cern.35ch.2o2p",
-      "type": "preprint",
-      "cited_by_count": 8,
-      "source": "arXiv (Cornell University)",
-      "open_access_url": "https://arxiv.org/pdf/2511.03883"
-    },
-    {
       "title": "A Language Model for Particle Tracking",
       "authors": [
         "Andris Huang",
@@ -767,7 +693,7 @@
       "doi": "https://doi.org/10.1109/nssmicrtsd49126.2023.10338743",
       "type": "conference-paper",
       "cited_by_count": 2,
-      "source": "",
+      "source": "IEEE Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC)",
       "open_access_url": null
     },
     {
@@ -783,7 +709,7 @@
       "doi": "https://doi.org/10.1109/nssmicrtsd49126.2023.10338219",
       "type": "conference-abstract",
       "cited_by_count": 0,
-      "source": "",
+      "source": "IEEE Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC)",
       "open_access_url": null
     },
     {
@@ -831,7 +757,7 @@
       "doi": "https://doi.org/10.5281/zenodo.8119762",
       "type": "conference-paper",
       "cited_by_count": 5,
-      "source": "HAL (Le Centre pour la Communication Scientifique Directe)",
+      "source": "HAL",
       "open_access_url": "https://hal.science/hal-03793565"
     },
     {
@@ -846,7 +772,7 @@
         "Alexandra L. Day",
         "Jim Kowalkowski",
         "C. Lee",
-        "K. Wang",
+        "Kaiyue Wang",
         "Wei\u2010keng Liao",
         "M. Spiropulu",
         "Ankit Agrawal",
@@ -1061,7 +987,7 @@
       "date": "2021-10-01",
       "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
       "type": "article",
-      "cited_by_count": 3,
+      "cited_by_count": 75,
       "source": "The European Physical Journal C",
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-021-09675-8.pdf"
     },
@@ -1119,41 +1045,6 @@
       "open_access_url": "http://export.arxiv.org/pdf/2103.06995"
     },
     {
-      "title": "Performance of a Geometric Deep Learning Pipeline for HL-LHC Particle Tracking",
-      "authors": [
-        "Xiangyang Ju",
-        "Daniel Murnane",
-        "P. Calafiura",
-        "Nicholas Choma",
-        "Sean Conlon",
-        "Steven Farrell",
-        "Yaoyuan Xu",
-        "M. Spiropulu",
-        "Jean-Roch Vlimant",
-        "Adam Aurisano",
-        "Jeremy Hewes",
-        "G. B. Cerati",
-        "L. Gray",
-        "T. Klijnsma",
-        "Jim Kowalkowski",
-        "Markus Julian Atkinson",
-        "MARK STEPHEN NEUBAUER",
-        "G. Dezoort",
-        "S. J. Thais",
-        "Aditi Chauhan",
-        "A. J. Schuy",
-        "S.-C. Hsu",
-        "Alexandra Ballow",
-        "Lazar, and Alina"
-      ],
-      "date": "2021-03-11",
-      "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
-      "type": "preprint",
-      "cited_by_count": 74,
-      "source": "arXiv (Cornell University)",
-      "open_access_url": "https://arxiv.org/pdf/2103.06995"
-    },
-    {
       "title": "Graph Neural Network for Object Reconstruction in Liquid Argon Time Projection Chambers",
       "authors": [
         "Jeremy Hewes",
@@ -1177,7 +1068,7 @@
       "date": "2021-01-01",
       "doi": "https://doi.org/10.1051/epjconf/202125103054",
       "type": "conference-paper",
-      "cited_by_count": 13,
+      "cited_by_count": 12,
       "source": "EPJ Web of Conferences",
       "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2021/05/epjconf_chep2021_03054.pdf"
     },
@@ -1219,7 +1110,7 @@
       "date": "2020-06-30",
       "doi": "https://doi.org/10.48550/arxiv.2007.00149",
       "type": "preprint",
-      "cited_by_count": 25,
+      "cited_by_count": 24,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2007.00149"
     },
@@ -1253,7 +1144,7 @@
       "date": "2020-03-25",
       "doi": "https://doi.org/10.48550/arxiv.2003.11603",
       "type": "preprint",
-      "cited_by_count": 88,
+      "cited_by_count": 86,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2003.11603"
     },
@@ -1273,6 +1164,20 @@
       "cited_by_count": 0,
       "source": "EPJ Web of Conferences",
       "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2020/21/epjconf_chep2020_06006.pdf"
+    },
+    {
+      "title": "Exploring fine-tuning of the Next-to-Minimal Composite Higgs Model",
+      "authors": [
+        "Daniel Murnane",
+        "Martin White",
+        "Anthony G. Williams"
+      ],
+      "date": "2019-04-01",
+      "doi": "https://doi.org/10.1007/jhep04(2019)076",
+      "type": "article",
+      "cited_by_count": 8,
+      "source": "Journal of High Energy Physics",
+      "open_access_url": "https://link.springer.com/content/pdf/10.1007/JHEP04(2019)076.pdf"
     },
     {
       "title": "The Landscape of Composite Higgs Models",
@@ -1324,7 +1229,22 @@
       "cited_by_count": 0,
       "source": "The University of Adelaide",
       "open_access_url": "https://doi.org/10.25909/5526892"
+    },
+    {
+      "title": "Constraining fine tuning in composite Higgs models with partially composite leptons",
+      "authors": [
+        "James Barnard",
+        "Daniel Murnane",
+        "Martin White",
+        "Anthony G. Williams"
+      ],
+      "date": "2017-09-01",
+      "doi": "https://doi.org/10.1007/jhep09(2017)049",
+      "type": "article",
+      "cited_by_count": 7,
+      "source": "Journal of High Energy Physics",
+      "open_access_url": "https://link.springer.com/content/pdf/10.1007/JHEP09(2017)049.pdf"
     }
   ],
-  "last_updated": "2026-10-25T03:38:55.231363Z"
+  "last_updated": "2026-11-01T04:52:57.945771Z"
 }

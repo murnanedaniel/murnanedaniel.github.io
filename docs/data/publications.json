@@ -4,11 +4,11 @@
     "orcid": "0000-0003-4046-4822",
     "openalex_id": "A5011421008",
     "stats": {
-      "works_count": 61,
-      "cited_by_count": 462,
-      "h_index": 10,
-      "i10_index": 10,
-      "2yr_mean_citedness": 3.12
+      "works_count": 58,
+      "cited_by_count": 930,
+      "h_index": 12,
+      "i10_index": 15,
+      "2yr_mean_citedness": 13.291666666666666
     }
   },
   "publications": [
@@ -35,7 +35,7 @@
       "type": "preprint",
       "cited_by_count": 0,
       "source": "arXiv (Cornell University)",
-      "open_access_url": "https://doi.org/10.48550/arxiv.2610.37697"
+      "open_access_url": "https://arxiv.org/pdf/2610.37697"
     },
     {
       "title": "Precision Tokenization for Multi-Modal Data in High Energy Physics",
@@ -94,7 +94,7 @@
       "date": "2026-09-26",
       "doi": "https://doi.org/10.48550/arxiv.2609.32479",
       "type": "preprint",
-      "cited_by_count": 0,
+      "cited_by_count": 1,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2609.32479"
     },
@@ -113,7 +113,7 @@
       "date": "2026-09-25",
       "doi": "https://doi.org/10.48550/arxiv.2609.31862",
       "type": "preprint",
-      "cited_by_count": 0,
+      "cited_by_count": 3,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2609.31862"
     },
@@ -121,7 +121,7 @@
       "title": "Accelerating GNN Inference for the GNN4ITk Pipeline in ATLAS",
       "authors": [
         "Aleksandra Poreba",
-        "Alexis Roger Louis Vallier",
+        "A. Vallier",
         "Alina Lazar",
         "Benjamin Huth",
         "Christophe Collard",
@@ -132,7 +132,7 @@
         "Jared Dynes Burleson",
         "Jay Chan",
         "Levi Condren",
-        "MARK STEPHEN NEUBAUER",
+        "M. S. Neubauer",
         "Miles Cochran-Branson",
         "T. M. Pham",
         "P. Calafiura",
@@ -157,7 +157,7 @@
       "authors": [
         "J. Stark",
         "Aleksandra Poreba",
-        "Alexis Roger Louis Vallier",
+        "A. Vallier",
         "Alina Lazar",
         "Benjamin Huth",
         "Caroline Collard",
@@ -167,7 +167,7 @@
         "Jared Dynes Burleson",
         "J. Chan",
         "Levi Condren",
-        "MARK STEPHEN NEUBAUER",
+        "M. S. Neubauer",
         "Miles Cochran-Branson",
         "T. M. Pham",
         "P. Calafiura",
@@ -201,7 +201,7 @@
       "date": "2026-06-09",
       "doi": "https://doi.org/10.1103/dvzc-lgj1",
       "type": "article",
-      "cited_by_count": 1,
+      "cited_by_count": 4,
       "source": "Physical review. D/Physical review. D.",
       "open_access_url": "https://doi.org/10.1103/dvzc-lgj1"
     },
@@ -218,7 +218,7 @@
       "date": "2026-04-01",
       "doi": "https://doi.org/10.1088/1742-6596/3206/1/012084",
       "type": "conference-paper",
-      "cited_by_count": 3,
+      "cited_by_count": 13,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://doi.org/10.1088/1742-6596/3206/1/012084"
     },
@@ -232,7 +232,7 @@
       "date": "2026-04-01",
       "doi": "https://doi.org/10.1088/1742-6596/3206/1/012093",
       "type": "conference-paper",
-      "cited_by_count": 3,
+      "cited_by_count": 11,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://doi.org/10.1088/1742-6596/3206/1/012093"
     },
@@ -343,7 +343,7 @@
       "date": "2026-02-19",
       "doi": "https://doi.org/10.48550/arxiv.2602.17582",
       "type": "preprint",
-      "cited_by_count": 0,
+      "cited_by_count": 5,
       "source": "HAL",
       "open_access_url": "http://arxiv.org/pdf/2602.17582"
     },
@@ -363,7 +363,7 @@
       "title": "Developments of GNN Track Reconstruction for the ATLAS ITk Detector",
       "authors": [
         "Aleksandra Poreba",
-        "Alexis Roger Louis Vallier",
+        "A. Vallier",
         "Alina Lazar",
         "Benjamin Huth",
         "Christophe Collard",
@@ -374,7 +374,7 @@
         "Jared Dynes Burleson",
         "J. Chan",
         "Levi Condren",
-        "MARK STEPHEN NEUBAUER",
+        "M. S. Neubauer",
         "Miles Cochran-Branson",
         "T. M. Pham",
         "P. Calafiura",
@@ -482,7 +482,7 @@
         "C. Amelung",
         "M. Amerl",
         "C. G. Ames",
-        "D. Amidei",
+        "Dante Eric Amidei",
         "Kyle Amirie",
         "S. P. Amor Dos Santos",
         "K. R. Amos",
@@ -501,7 +501,7 @@
       "date": "2025-08-26",
       "doi": "https://doi.org/10.1140/epjc/s10052-025-14572-5",
       "type": "erratum",
-      "cited_by_count": 1,
+      "cited_by_count": 7,
       "source": "The European Physical Journal C",
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-025-14572-5.pdf"
     },
@@ -593,7 +593,7 @@
         "C. Amelung",
         "M. Amerl",
         "C. G. Ames",
-        "D. Amidei",
+        "Dante Eric Amidei",
         "Kyle Amirie",
         "S. P. Amor Dos Santos",
         "K. R. Amos",
@@ -612,7 +612,7 @@
       "date": "2025-03-06",
       "doi": "https://doi.org/10.1140/epjc/s10052-024-13701-w",
       "type": "article",
-      "cited_by_count": 57,
+      "cited_by_count": 243,
       "source": "The European Physical Journal C",
       "open_access_url": "https://doi.org/10.1140/epjc/s10052-024-13701-w"
     },
@@ -630,7 +630,7 @@
       "date": "2024-02-14",
       "doi": "https://doi.org/10.48550/arxiv.2402.10239",
       "type": "preprint",
-      "cited_by_count": 2,
+      "cited_by_count": 11,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2402.10239"
     },
@@ -644,12 +644,12 @@
         "T. M. Pham",
         "Charline Rougier",
         "J. Stark",
-        "Alexis Roger Louis Vallier"
+        "A. Vallier"
       ],
       "date": "2024-01-01",
       "doi": "https://doi.org/10.1051/epjconf/202429503030",
       "type": "conference-paper",
-      "cited_by_count": 10,
+      "cited_by_count": 18,
       "source": "EPJ Web of Conferences",
       "open_access_url": "https://doi.org/10.1051/epjconf/202429503030"
     },
@@ -661,7 +661,7 @@
       "date": "2024-01-01",
       "doi": "https://doi.org/10.1051/epjconf/202429509016",
       "type": "conference-paper",
-      "cited_by_count": 1,
+      "cited_by_count": 2,
       "source": "EPJ Web of Conferences",
       "open_access_url": "http://dx.doi.org/10.1051/epjconf/202429509016"
     },
@@ -674,7 +674,7 @@
       "date": "2023-11-06",
       "doi": "https://doi.org/10.48550/arxiv.2311.03094",
       "type": "preprint",
-      "cited_by_count": 3,
+      "cited_by_count": 6,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2311.03094"
     },
@@ -692,7 +692,7 @@
       "date": "2023-11-04",
       "doi": "https://doi.org/10.1109/nssmicrtsd49126.2023.10338743",
       "type": "conference-paper",
-      "cited_by_count": 2,
+      "cited_by_count": 3,
       "source": "IEEE Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC)",
       "open_access_url": null
     },
@@ -720,7 +720,7 @@
       "date": "2023-07-31",
       "doi": "https://doi.org/10.48550/arxiv.2307.16662",
       "type": "preprint",
-      "cited_by_count": 2,
+      "cited_by_count": 3,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2307.16662"
     },
@@ -731,13 +731,13 @@
         "Xiangyang Ju",
         "Jacob Lyons",
         "Daniel Murnane",
-        "Mariel Nelson Pettee",
+        "M. Pettee",
         "Landon Reed"
       ],
       "date": "2023-07-01",
       "doi": "https://doi.org/10.1088/1748-0221/18/07/p07001",
       "type": "article",
-      "cited_by_count": 8,
+      "cited_by_count": 11,
       "source": "Journal of Instrumentation",
       "open_access_url": "https://iopscience.iop.org/article/10.1088/1748-0221/18/07/P07001/pdf"
     },
@@ -745,7 +745,7 @@
       "title": "CTD2022: ATLAS ITk Track Reconstruction with a GNN-based Pipeline",
       "authors": [
         "Charline Rougier",
-        "Alexis Roger Louis Vallier",
+        "A. Vallier",
         "Daniel Murnane",
         "J. Stark",
         "P. Calafiura",
@@ -756,7 +756,7 @@
       "date": "2023-06-26",
       "doi": "https://doi.org/10.5281/zenodo.8119762",
       "type": "conference-paper",
-      "cited_by_count": 5,
+      "cited_by_count": 7,
       "source": "HAL",
       "open_access_url": "https://hal.science/hal-03793565"
     },
@@ -808,7 +808,7 @@
         "T. Klijnsma",
         "Jim Kowalkowski",
         "Markus Atkinson",
-        "MARK STEPHEN NEUBAUER",
+        "M. S. Neubauer",
         "Gage DeZoort",
         "S. J. Thais",
         "Shih-Chieh Hsu",
@@ -823,7 +823,7 @@
       "date": "2023-02-01",
       "doi": "https://doi.org/10.1088/1742-6596/2438/1/012008",
       "type": "conference-paper",
-      "cited_by_count": 14,
+      "cited_by_count": 25,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012008/pdf"
     },
@@ -845,7 +845,7 @@
         "T. Klijnsma",
         "Jim Kowalkowski",
         "R. J. Atkin",
-        "MARK STEPHEN NEUBAUER",
+        "M. S. Neubauer",
         "Gage DeZoort",
         "S. J. Thais",
         "Alexandra Ballow",
@@ -853,13 +853,13 @@
         "Sylvain Caillou",
         "Charline Rougier",
         "Jan Stark",
-        "Alexis Roger Louis Vallier",
+        "A. Vallier",
         "Jad Mathieu Sardain"
       ],
       "date": "2023-02-01",
       "doi": "https://doi.org/10.1088/1742-6596/2438/1/012117",
       "type": "conference-paper",
-      "cited_by_count": 1,
+      "cited_by_count": 2,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012117/pdf"
     },
@@ -873,7 +873,7 @@
       "date": "2023-02-01",
       "doi": "https://doi.org/10.1088/1742-6596/2438/1/012121",
       "type": "conference-paper",
-      "cited_by_count": 4,
+      "cited_by_count": 13,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://doi.org/10.1088/1742-6596/2438/1/012121"
     },
@@ -892,7 +892,7 @@
       "date": "2022-12-03",
       "doi": "https://doi.org/10.22323/1.414.0227",
       "type": "conference-paper",
-      "cited_by_count": 0,
+      "cited_by_count": 1,
       "source": "International Conference on High Energy Physics (ICHEP)",
       "open_access_url": "https://pos.sissa.it/414/227/pdf"
     },
@@ -909,7 +909,7 @@
       "date": "2022-10-21",
       "doi": "https://doi.org/10.48550/arxiv.2210.12247",
       "type": "preprint",
-      "cited_by_count": 2,
+      "cited_by_count": 6,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2210.12247"
     },
@@ -924,13 +924,13 @@
         "S. Ganguly",
         "M. Kagan",
         "Daniel Murnane",
-        "MARK STEPHEN NEUBAUER",
+        "M. S. Neubauer",
         "K. Terao"
       ],
       "date": "2022-03-23",
       "doi": "https://doi.org/10.48550/arxiv.2203.12852",
       "type": "preprint",
-      "cited_by_count": 16,
+      "cited_by_count": 48,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2203.12852"
     },
@@ -944,7 +944,7 @@
         "David W. Miller",
         "Daniel Murnane",
         "Jan T. Offermann",
-        "Mariel Nelson Pettee",
+        "M. Pettee",
         "Phiala Elisabeth Shanahan",
         "C. O. Shimmin",
         "S. J. Thais"
@@ -952,7 +952,7 @@
       "date": "2022-03-11",
       "doi": "https://doi.org/10.48550/arxiv.2203.06153",
       "type": "preprint",
-      "cited_by_count": 11,
+      "cited_by_count": 37,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2203.06153"
     },
@@ -975,7 +975,7 @@
         "T. Klijnsma",
         "Jim Kowalkowski",
         "Markus Julian Atkinson",
-        "MARK STEPHEN NEUBAUER",
+        "M. S. Neubauer",
         "G. Dezoort",
         "S. J. Thais",
         "Aditi Chauhan",
@@ -987,7 +987,7 @@
       "date": "2021-10-01",
       "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
       "type": "article",
-      "cited_by_count": 75,
+      "cited_by_count": 115,
       "source": "The European Physical Journal C",
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-021-09675-8.pdf"
     },
@@ -1005,44 +1005,9 @@
       "date": "2021-05-01",
       "doi": "https://doi.org/10.1007/jhep05(2021)237",
       "type": "article",
-      "cited_by_count": 5,
+      "cited_by_count": 6,
       "source": "Journal of High Energy Physics",
       "open_access_url": "https://link.springer.com/content/pdf/10.1007/JHEP05(2021)237.pdf"
-    },
-    {
-      "title": "Physics and Computing Performance of the Exa.TrkX TrackML Pipeline.",
-      "authors": [
-        "Xiangyang Ju",
-        "Daniel Murnane",
-        "P. Calafiura",
-        "Nicholas Choma",
-        "Sean Conlon",
-        "Steven Farrell",
-        "Yaoyuan Xu",
-        "M. Spiropulu",
-        "Jean-Roch Vlimant",
-        "Adam Aurisano",
-        "Jeremy Hewes",
-        "G. B. Cerati",
-        "L. Gray",
-        "T. Klijnsma",
-        "Jim Kowalkowski",
-        "Markus Julian Atkinson",
-        "MARK STEPHEN NEUBAUER",
-        "G. Dezoort",
-        "S. J. Thais",
-        "Aditi Chauhan",
-        "A. J. Schuy",
-        "S.-C. Hsu",
-        "Alexandra Ballow",
-        "Alina Lazar"
-      ],
-      "date": "2021-03-11",
-      "doi": null,
-      "type": "preprint",
-      "cited_by_count": 1,
-      "source": "arXiv (Cornell University)",
-      "open_access_url": "http://export.arxiv.org/pdf/2103.06995"
     },
     {
       "title": "Graph Neural Network for Object Reconstruction in Liquid Argon Time Projection Chambers",
@@ -1068,7 +1033,7 @@
       "date": "2021-01-01",
       "doi": "https://doi.org/10.1051/epjconf/202125103054",
       "type": "conference-paper",
-      "cited_by_count": 12,
+      "cited_by_count": 16,
       "source": "EPJ Web of Conferences",
       "open_access_url": "https://www.epj-conferences.org/articles/epjconf/pdf/2021/05/epjconf_chep2021_03054.pdf"
     },
@@ -1110,7 +1075,7 @@
       "date": "2020-06-30",
       "doi": "https://doi.org/10.48550/arxiv.2007.00149",
       "type": "preprint",
-      "cited_by_count": 24,
+      "cited_by_count": 42,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2007.00149"
     },
@@ -1144,7 +1109,7 @@
       "date": "2020-03-25",
       "doi": "https://doi.org/10.48550/arxiv.2003.11603",
       "type": "preprint",
-      "cited_by_count": 86,
+      "cited_by_count": 131,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2003.11603"
     },
@@ -1175,7 +1140,7 @@
       "date": "2019-04-01",
       "doi": "https://doi.org/10.1007/jhep04(2019)076",
       "type": "article",
-      "cited_by_count": 8,
+      "cited_by_count": 9,
       "source": "Journal of High Energy Physics",
       "open_access_url": "https://link.springer.com/content/pdf/10.1007/JHEP04(2019)076.pdf"
     },
@@ -1214,7 +1179,7 @@
       "date": "2017-11-01",
       "doi": "https://doi.org/10.1140/epjc/s10052-017-5285-8",
       "type": "article",
-      "cited_by_count": 93,
+      "cited_by_count": 117,
       "source": "The European Physical Journal C",
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-017-5285-8.pdf"
     },
@@ -1241,10 +1206,10 @@
       "date": "2017-09-01",
       "doi": "https://doi.org/10.1007/jhep09(2017)049",
       "type": "article",
-      "cited_by_count": 7,
+      "cited_by_count": 8,
       "source": "Journal of High Energy Physics",
       "open_access_url": "https://link.springer.com/content/pdf/10.1007/JHEP09(2017)049.pdf"
     }
   ],
-  "last_updated": "2026-11-01T04:52:57.945771Z"
+  "last_updated": "2026-11-08T04:56:36.413383Z"
 }

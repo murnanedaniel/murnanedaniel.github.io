@@ -5,10 +5,10 @@
     "openalex_id": "A5011421008",
     "stats": {
       "works_count": 58,
-      "cited_by_count": 930,
-      "h_index": 12,
+      "cited_by_count": 1009,
+      "h_index": 13,
       "i10_index": 15,
-      "2yr_mean_citedness": 13.291666666666666
+      "2yr_mean_citedness": 15.083333333333334
     }
   },
   "publications": [
@@ -113,7 +113,7 @@
       "date": "2026-09-25",
       "doi": "https://doi.org/10.48550/arxiv.2609.31862",
       "type": "preprint",
-      "cited_by_count": 3,
+      "cited_by_count": 4,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2609.31862"
     },
@@ -201,7 +201,7 @@
       "date": "2026-06-09",
       "doi": "https://doi.org/10.1103/dvzc-lgj1",
       "type": "article",
-      "cited_by_count": 4,
+      "cited_by_count": 5,
       "source": "Physical review. D/Physical review. D.",
       "open_access_url": "https://doi.org/10.1103/dvzc-lgj1"
     },
@@ -218,7 +218,7 @@
       "date": "2026-04-01",
       "doi": "https://doi.org/10.1088/1742-6596/3206/1/012084",
       "type": "conference-paper",
-      "cited_by_count": 13,
+      "cited_by_count": 20,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://doi.org/10.1088/1742-6596/3206/1/012084"
     },
@@ -232,7 +232,7 @@
       "date": "2026-04-01",
       "doi": "https://doi.org/10.1088/1742-6596/3206/1/012093",
       "type": "conference-paper",
-      "cited_by_count": 11,
+      "cited_by_count": 13,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://doi.org/10.1088/1742-6596/3206/1/012093"
     },
@@ -612,7 +612,7 @@
       "date": "2025-03-06",
       "doi": "https://doi.org/10.1140/epjc/s10052-024-13701-w",
       "type": "article",
-      "cited_by_count": 243,
+      "cited_by_count": 271,
       "source": "The European Physical Journal C",
       "open_access_url": "https://doi.org/10.1140/epjc/s10052-024-13701-w"
     },
@@ -630,7 +630,7 @@
       "date": "2024-02-14",
       "doi": "https://doi.org/10.48550/arxiv.2402.10239",
       "type": "preprint",
-      "cited_by_count": 11,
+      "cited_by_count": 15,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2402.10239"
     },
@@ -720,7 +720,7 @@
       "date": "2023-07-31",
       "doi": "https://doi.org/10.48550/arxiv.2307.16662",
       "type": "preprint",
-      "cited_by_count": 3,
+      "cited_by_count": 4,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2307.16662"
     },
@@ -756,7 +756,7 @@
       "date": "2023-06-26",
       "doi": "https://doi.org/10.5281/zenodo.8119762",
       "type": "conference-paper",
-      "cited_by_count": 7,
+      "cited_by_count": 9,
       "source": "HAL",
       "open_access_url": "https://hal.science/hal-03793565"
     },
@@ -823,7 +823,7 @@
       "date": "2023-02-01",
       "doi": "https://doi.org/10.1088/1742-6596/2438/1/012008",
       "type": "conference-paper",
-      "cited_by_count": 25,
+      "cited_by_count": 27,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012008/pdf"
     },
@@ -873,7 +873,7 @@
       "date": "2023-02-01",
       "doi": "https://doi.org/10.1088/1742-6596/2438/1/012121",
       "type": "conference-paper",
-      "cited_by_count": 13,
+      "cited_by_count": 11,
       "source": "Journal of Physics Conference Series",
       "open_access_url": "https://doi.org/10.1088/1742-6596/2438/1/012121"
     },
@@ -930,7 +930,7 @@
       "date": "2022-03-23",
       "doi": "https://doi.org/10.48550/arxiv.2203.12852",
       "type": "preprint",
-      "cited_by_count": 48,
+      "cited_by_count": 59,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2203.12852"
     },
@@ -952,7 +952,7 @@
       "date": "2022-03-11",
       "doi": "https://doi.org/10.48550/arxiv.2203.06153",
       "type": "preprint",
-      "cited_by_count": 37,
+      "cited_by_count": 42,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2203.06153"
     },
@@ -987,7 +987,7 @@
       "date": "2021-10-01",
       "doi": "https://doi.org/10.1140/epjc/s10052-021-09675-8",
       "type": "article",
-      "cited_by_count": 115,
+      "cited_by_count": 118,
       "source": "The European Physical Journal C",
       "open_access_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-021-09675-8.pdf"
     },
@@ -1075,7 +1075,7 @@
       "date": "2020-06-30",
       "doi": "https://doi.org/10.48550/arxiv.2007.00149",
       "type": "preprint",
-      "cited_by_count": 42,
+      "cited_by_count": 45,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2007.00149"
     },
@@ -1109,7 +1109,7 @@
       "date": "2020-03-25",
       "doi": "https://doi.org/10.48550/arxiv.2003.11603",
       "type": "preprint",
-      "cited_by_count": 131,
+      "cited_by_count": 142,
       "source": "arXiv (Cornell University)",
       "open_access_url": "https://arxiv.org/pdf/2003.11603"
     },
@@ -1211,5 +1211,5 @@
       "open_access_url": "https://link.springer.com/content/pdf/10.1007/JHEP09(2017)049.pdf"
     }
   ],
-  "last_updated": "2026-11-08T04:56:36.413383Z"
+  "last_updated": "2026-11-15T05:19:49.342395Z"
 }
